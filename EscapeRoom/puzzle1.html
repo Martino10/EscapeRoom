@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>EscapeRoom - Spel 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" charset="utf-8" defer></script>
+</head>
+<body>
+  <section class="upper__screen">
+
+    <div></div>
+    <h1 class="title">Crack the code</h1>
+
+    <section class="button__wrapper">
+      <button class="sound__button" onclick="switch__icons__sound()">
+        <figure class="megaphone"></figure>
+        <figure class="signal__icon" id="signal__icon__js"></figure>
+        <figure class="x__mark" id="x__mark__js"></figure>
+      </button>
+    </section>
+
+  </section>
+  <section class="middle__screen">
+    <div></div>
+    <section class="numberpad">
+      <div class="placeholder__numberpad"></div>
+      <button class="number__button" onclick="number__0__pressed()">0</button>
+      <div class="placeholder__numberpad"></div>
+      <button class="number__button" onclick="number__1__pressed()">1</button>
+      <button class="number__button" onclick="number__2__pressed()">2</button>
+      <button class="number__button" onclick="number__3__pressed()">3</button>
+      <button class="number__button" onclick="number__4__pressed()">4</button>
+      <button class="number__button" onclick="number__5__pressed()">5</button>
+      <button class="number__button" onclick="number__6__pressed()">6</button>
+      <button class="number__button" onclick="number__7__pressed()">7</button>
+      <button class="number__button" onclick="number__8__pressed()">8</button>
+      <button class="number__button" onclick="number__9__pressed()">9</button>
+    </section>
+    <section class="hints">
+      <p>
+        14673 ==> 3GV & 1GG <br>
+        02637 ==> 3GG <br>
+        69308 ==> 1GV <br>
+        56073 ==> 2GV <br>
+        59418 ==> 1GV & 1 GG 
+      </p>
+    </section>
+    <section>
+      <figure class="invulveld" ></figure>
+      <figure class="invulveld" ></figure>
+      <figure class="invulveld" ></figure>
+      <figure class="invulveld" ></figure>
+      <figure class="invulveld" ></figure>
+
+    </section>
+
+  </section>
+  <section class="bottom__screen">
+
+  </section>
+
+</body>
+</html>

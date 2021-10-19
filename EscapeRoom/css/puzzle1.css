@@ -1,0 +1,167 @@
+*,*::before, *::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+:root{
+
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #5f7ab0;
+  background: url("img/Background.PNG");
+  backdrop-filter: blur(4px);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 60% 12% 8%;
+
+}
+
+.upper__screen{
+  display:grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.title{
+  font-size: 450%;
+  margin: 1rem auto;
+}
+
+.button__wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound__button{
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.megaphone{
+  height:1.5rem;
+  width:1.5rem;
+  background: black;
+  position: relative;
+  transform:translateX(20%);
+}
+
+.megaphone::after{
+  content:"";
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  border-right:10px solid black;
+}
+
+.signal__icon {
+  display:block;
+  color: black;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border-top: solid 0.1rem currentColor;
+  border-right: solid 0.1rem transparent;
+  border-bottom: solid 0.1rem transparent;
+  border-left: solid 0.1rem transparent;
+  transform:translateX(360%) translateY(-150%)scale(1.6) rotate(90deg);
+}
+
+.signal__icon::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border-top: solid 0.1rem currentColor;
+  border-right: solid 0.1rem transparent;
+  border-bottom: solid 0.1rem transparent;
+  border-left: solid 0.1rem transparent;
+}
+
+.signal__icon::after {
+  content: '';
+  position: absolute;
+  left: -9px;
+  top: -9px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-top: solid 0.1rem currentColor;
+  border-right: solid 0.1rem transparent;
+  border-bottom: solid 0.1rem transparent;
+  border-left: solid 0.1rem transparent;
+}
+
+.x__mark{
+  display:none;
+  position:absolute;
+  height:1.5rem;
+  width:0.3rem;
+  background: black;
+  transform:translateX(1050%) translateY(-90%) rotate(45deg);
+}
+
+.x__mark::before{
+  position:absolute;
+  content:"";
+  height:1.5rem;
+  width:0.3rem;
+  background: black;
+  transform:translateX(-50%)rotate(90deg);
+}
+
+.middle__screen{
+  display:grid;
+  grid-template-columns: 20% 33% 32% 15%;
+}
+
+.numberpad{
+  display: flex;
+  flex-wrap:wrap;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.number__button{
+  width:25%;
+  height:20%;
+  background:#3a5892;
+}
+
+.placeholder__numberpad{
+  width:25%;
+  height:20%;
+}
+
+.hints{
+  background: rgba(255, 255, 255, 0.4);
+  font-size: 2.5rem;
+}
+
+.invulveld{
+  display: flex;
+  height:3.2rem;
+  width:3.2rem;
+  background: gray;
+  margin: 1rem auto;
+  justify-content: center;
+  align-items: center;
+}

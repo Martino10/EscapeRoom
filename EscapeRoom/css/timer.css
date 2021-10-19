@@ -1,0 +1,47 @@
+div {
+    /* text-align: center; */
+    border: 5px solid #129db3;
+    display:inline;
+    padding: 5px;
+    color: #004853;
+    font-family: 'Orbitron', Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+}
+
+.div2 {
+  border: 5px solid #12b328;
+    display:inline;
+    padding: 5px;
+    color: #004853;
+    font-family: 'Orbitron', Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.div3 {
+  border: 5px solid #df5d06;
+    display:inline;
+    padding: 5px;
+    color: #004853;
+    font-family: 'Orbitron', Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('font/Orbitron-Regular.woff2') format('woff2'),
+      url('font/Orbitron-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

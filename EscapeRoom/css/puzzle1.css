@@ -15,7 +15,7 @@ html{
 
 body{
   background-color: #5f7ab0;
-  background: url("img/Background.PNG");
+  background: url("../img/Background.PNG");
   backdrop-filter: blur(4px);
   background-size: contain;
   background-position: center;

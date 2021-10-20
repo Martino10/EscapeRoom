@@ -1,6 +1,7 @@
 var timerVars = {};
 
-function next() { //next page
+
+const next = () => { //next page
     sessionStorage.setItem("minRemaining", timerVars.minutes);
     sessionStorage.setItem("secRemaining", timerVars.seconds);
     if (window.location.href.includes('timerdemo.html')) { 
@@ -14,9 +15,9 @@ function next() { //next page
     }
 }
 
-function startTimer(duration) { //start the countdown
+const startTimer = (duration) => { //start the countdown
     var timer = duration, minutes, seconds;
-    var display = document.querySelector('#time');
+    var display = document.querySelector('#time__js');
     window.myTimer = setInterval(function () {
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -48,7 +49,7 @@ function startTimer(duration) { //start the countdown
     }
 }
 
-window.onload = function () {
+window.onload = () => {
     var tenMinutes = 60 * 10;
     var minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
     var secRemaining = parseInt(sessionStorage.getItem("secRemaining"));

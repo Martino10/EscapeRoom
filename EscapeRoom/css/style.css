@@ -133,9 +133,10 @@ body{
 }
 
 .title{
+  height: 100%;
   text-align: center;
   font-size: 3rem;
-
+  margin: auto auto;
 }
 
 .bordertitle{
@@ -144,7 +145,7 @@ body{
   border-color: black;
   border-top: none;
   border-bottom: none;
-
+  height: 100%;
 }
 
 .skip__knop{

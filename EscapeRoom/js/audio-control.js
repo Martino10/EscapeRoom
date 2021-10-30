@@ -3,6 +3,8 @@ var x__mark__icon = document.getElementById('x__mark__js');
 
 var state__sound = 1;
 
+
+
 function switch__icons__sound(){
   if (state__sound == 1){
     state__sound = 0;

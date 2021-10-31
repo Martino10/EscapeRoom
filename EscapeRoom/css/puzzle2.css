@@ -1,0 +1,30 @@
+body {
+    background: url("../img/first_frame.png");
+}
+
+.puzzle2_button_img {
+    height: 40px;
+    width: auto;
+    margin-right: 22px;
+}
+
+.puzzle2_button_img_last {
+    height: 40px;
+    width: auto;
+}
+
+.puzzle2_button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+
+.puzzlebutton__wrapper {
+    position: fixed;
+    left: 55%;
+    top: 22%;
+    z-index: -1;
+}

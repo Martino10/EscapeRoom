@@ -1,0 +1,72 @@
+body {
+    grid-template-rows: 100% !important;
+}
+
+.bronnenmain {
+    background-image: url(../img/BulkWhale.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.backbutton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* width: 50px;
+    height: 50px; */
+    width: 5rem;
+    height: 5rem;
+}
+
+.broncontainer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: repeat(1fr, 4); */
+    /* flex-wrap: wrap; */
+    /* flex-basis: 25px; */
+    /* flex-grow: 0; */
+    width: 70%;
+    margin: 0 auto;;
+}
+
+
+.broncard:hover {
+    transform: scale(1.1);
+    background-color:rgba(71, 39, 145, 0.90);
+    box-shadow: 0px 0px 50px black;
+}
+
+.broncard {
+    transition: 0.3s;
+    color: white;
+    padding: 4%;
+    margin: 5%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 80% 10% 10%;
+    /* width: 50%;
+    height: 50%; */
+    /* max-width: 50%; */
+    background-color:rgba(71, 39, 145, 0.80);
+    text-align: center;
+}
+
+.bronnaam {
+    font-size: 150%;
+}   
+
+.bronlink {
+    color: white;
+    text-decoration: none;
+}
+
+.bronlink > img {
+    width: 100%;
+    height: 100%;
+    /* image */
+    /* max-width: 50%; */
+    object-fit: cover;
+    image-rendering: crisp-edges;
+    /* height: auto; */
+}

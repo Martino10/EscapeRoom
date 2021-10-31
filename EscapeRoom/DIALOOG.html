@@ -24,10 +24,18 @@
 <body>
   <section class="mainbody">
 
-    <ol class = "dialogs" id = "js__dialogs" data-snelheid = 4>
-        <li data-naam = "persoon 1" data-tekst = "Dit is tekst" />
-        <li data-naam = "persoon 1" data-tekst = "Dit is mijn andere tekst !!!" />
-        <li data-naam = "persoon 2" data-tekst = "ik ben er ook!!!" />
+    <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
+    <!-- data-snelheid geeft aan hoe vaak er nieuwe tekst geplaatst moet worden per seconde (dus 1000/snelheid) -->
+    <!-- data-wait geeft aan hoeveel MILLISECONDEN er tussen dialogen moeten zitten -->
+    <ol class = "dialogs" id = "js__dialogs" data-chunk = 2 data-snelheid = 10 data-wait = 1000>
+        <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
+        <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
+        <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
+        <li data-naam = "persoon 1" data-tekst = "Dit is tekst"></li>
+        <li data-naam = "persoon 1" data-tekst = "Dit is mijn andere tekst !!!" ></li>
+        <li data-naam = "persoon 1" data-tekst = "Dit is nog meer andere tekst !!!" ></li>
+        <li data-naam = "persoon 2" data-tekst = "ik ben er ook!!!" ></li>
+        <li data-naam = "docent latijns" data-tekst = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ></li>
 
     </ol>
 

@@ -5,9 +5,9 @@
 
 }
 
-:root{
+/* :root{
 
-}
+} */
 
 html{
   font-size: 62.5%;
@@ -19,9 +19,9 @@ body{
   grid-template-rows: 90% 10%;
   font-family: 'Roboto', sans-serif;
 }
-
+/* 
 .mainbody{
-}
+} */
 
 .button__wrapper{
   width:5rem;

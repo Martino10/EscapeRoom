@@ -1,0 +1,45 @@
+.mainbody {
+}
+
+.dialogs {
+    overflow-y: auto;
+    max-height: 100%;
+
+}
+
+.dialogs::before{
+    content: "WIP STYLING!!";
+
+}
+
+
+/* .dialogs > li:after {
+    content: "WIP STYLING!!";
+} */
+
+.dialogcontainer[data-joined="false"] {
+    margin-top: 2rem;
+}
+.dialogcontainer[data-joined="true"] {
+    margin-top: 0.1rem;
+}
+
+.dialogcontainer {
+    border-radius: 5px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background: coral;
+    padding: 2rem;
+}
+
+.dialogname {
+    font-size: 150%;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.dialogtext {
+    font-size: 150%;
+    /* margin: 1 0; */
+}

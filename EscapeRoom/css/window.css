@@ -1,0 +1,13 @@
+body {
+    background: url("../img/window_frame.png");
+}
+
+.doorhandlebutton {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    font-size:0;
+    position: relative;
+    left: 54%;
+    top: 63%;
+}

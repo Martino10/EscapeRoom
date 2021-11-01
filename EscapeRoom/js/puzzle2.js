@@ -8,11 +8,14 @@ var buttonClicked = {
 }
 var clickOrder = [];
 
+document.getElementById("js__windowbutton").disabled = true;
+
 function checkAll() {
     if (buttonClicked[1] && buttonClicked[2] && buttonClicked[3] && buttonClicked[4] && buttonClicked[5] && buttonClicked[6]) {
         if (clickOrder[0] == 1 && clickOrder[1] == 2 && clickOrder[2] == 3 && clickOrder[3] == 4 && clickOrder[4] == 5 && clickOrder[5] == 6) {
             console.log("Congrats!");
             document.body.style.background = "url('img/second_frame.png')";
+            document.getElementById("js__windowbutton").disabled = false;
             return;
         }
         else { console.log("try again.");}
@@ -31,7 +34,6 @@ function checkAll() {
     }
 }
 
-
 function button_clicked(num) {
     document.getElementById("buttonimg" + num).src = "img/button_pressed.png";
     document.getElementById("js__button" + num).disabled = true;
@@ -40,13 +42,11 @@ function button_clicked(num) {
     checkAll();
 }
 
-const onload = () => {
-    button1 = document.getElementById("js__button1")
-    button2 = document.getElementById("js__button2")
-    button3 = document.getElementById("js__button3")
-    button4 = document.getElementById("js__button4")
-    button5 = document.getElementById("js__button5")
-    button6 = document.getElementById("js__button6")
+function viewWindow() {
+    location.href = 'puzzle2-window.html';
 }
 
-window.onload = onload
+function foundDoorhandle() {
+    console.log("Doorhandle found!");
+    location.href = 'puzzle2done.html';
+}

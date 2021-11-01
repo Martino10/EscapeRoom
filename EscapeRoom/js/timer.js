@@ -6,6 +6,7 @@ let run_on_pages = [
     'puzzle2.html',
     'spel3.html',
     'puzzle1.html',
+    'puzzle2-window.html'
 ]
 
 const next = () => { //next page

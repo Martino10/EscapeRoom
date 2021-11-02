@@ -1,5 +1,5 @@
 body {
-    background: url("../img/last_frame.png") fill no-repeat !important;
+    background: url("../img/last_frame.png") no-repeat !important;
     background-position: center;
     background-size: cover;
 }

@@ -5,6 +5,9 @@ let speed_modifier = 1.0;
 let all_msg = [HTMLCollection]
 let chunk = 1
 let wait = 500
+let textvars = {
+    'YOUR_NAME':sessionStorage.getItem("playerName"),
+}
 
 const generate_html = (naam, tekst, add_naam=false) => {    
     let out = ''
@@ -22,18 +25,21 @@ const generate_html = (naam, tekst, add_naam=false) => {
 }
 const update_element = (obj, html) => {
     obj.innerHTML = html
-    // console.log('updated ',obj)
 }
 
-const substep = () => {
-
+const process_vars = (text, vars=textvars) => {
+    let out = text
+    for(key in vars) {
+        out = out.replaceAll('['+key+']',vars[key])
+    };
+    return out
 }
 
 const step = () => {
     console.log('step');
     let msg = all_msg[msg_index]
-    let tekst = msg.dataset.tekst
-    let naam = msg.dataset.naam
+    let tekst = process_vars(msg.dataset.tekst)
+    let naam = process_vars(msg.dataset.naam)
 
     let add_naam = true
     if (msg_index > 0) {
@@ -55,22 +61,6 @@ const step = () => {
     } else {
         setTimeout(step, 1000/(speed*speed_modifier))
     }
-    // for (let i = 0; i < speed; i++) {
-    //     if (txt_index+i <= tekst.length ) {
-    //         setTimeout(() => {
-    //             const myindex = txt_index + i
-    //             update_element(msg, generate_html(naam, tekst.slice(0, myindex), add_naam))
-    //             txt_index++;
-    //         }, (1500/speed)*i);
-    //     }
-        
-    // }
-    // if (txt_index+speed >= tekst.length) {
-    //     setTimeout(() => {
-    //     msg_index = Math.min(all_msg.length-1, msg_index+1)
-    //     txt_index = 0
-    //     }, 2000)
-    // }
     
 }
 
@@ -83,12 +73,9 @@ const main = () => {
     speed = parseInt(grandpa.dataset.snelheid)
     chunk = parseInt(grandpa.dataset.chunk)
     wait = parseInt(grandpa.dataset.wait)
-    // console.log('speed set to',speed)
-    // console.log('chunk set to',chunk)
     console.log(chunk,'letters every',1000/speed,'seconds, with',wait/1000,'seconds between dialogs')
 
     step();
-    // setInterval(step, 1000)
 }
 
 

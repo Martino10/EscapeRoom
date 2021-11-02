@@ -16,9 +16,9 @@
     <script src="js/audio-control.js" charset="utf-8" defer></script>
     
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
-    <title>StandaarOpstelling</title>
+    <title>Register Name</title>
     <link rel="stylesheet" href="css/JOUW-CSS-HIER.css">
-    <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script>
+    <script src="js/registerName.js" charset="utf-8" defer></script>
 
 </head>
 <body>
@@ -32,11 +32,13 @@
       </button>
     </section>
 
-    <h1> HIER VULT MEN ZIJN OF HAAR OF WHATEVER NAAM IN</h1>
+    <form id="form" onsubmit="return false;">
+      <h3>What is your name?</h3><br>
+      <input type="text" id="userInput" placeholder="Player Name" class="naaminput"><br>
+      <button onclick="registerName()" class="submitName">Start Mission</button>
+    </form>
 
   </section>
-
-
 
   <section class="footer">
     <div class="timer"><span id="time__js">--:--</span></div>

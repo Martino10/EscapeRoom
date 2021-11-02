@@ -80,7 +80,7 @@ const startTimer = (duration) => { //start the countdown
         timerVars.minutes = minutes;
         timerVars.seconds = seconds;
         
-        // save the time every 15 seconds
+        // save the time every 1 second
         if (seconds % 1 == 0){
             saveTime()
         }
@@ -155,10 +155,10 @@ window.addEventListener("load", () => {
 
 
     window.portraitchecker = setInterval(doPortraitCheck, 500)
-    if (isTimerPaused()) {
-        document.getElementById('time__js').style = 'color: gray;';
-    } else {
-        document.getElementById('skip__knop__js').disabled = true;
-    }
+    // if (isTimerPaused()) {
+    //     document.getElementById('time__js').style = 'color: gray;';
+    // } else {
+    //     document.getElementById('skip__knop__js').disabled = true;
+    // }
 }
 , true)

@@ -24,14 +24,14 @@
 <body>
   <section class="mainbody">
 
-    <div></div>
-
-    <div class="hintbox">
-        <h1>HINT<br><br></h1>
-        <p>CW = Correct number, but Wrong place</p><br>
-        <p>CC = Correct number, and Correct place</p><br>
-        <button class="hintbutton" onclick="closeHint()">Got it!</button>
+    <div class="victorybox">
+        <h1>PUZZLE CLEARED<br><br></h1>
+        <p>Good work! But stay focused. You have</p><br>
+        <span id="js__timeleft">--:--</span>
+        <p><br>left!</p>
       </div>
+
+    <div></div>
 
     <section class="button__wrapper">
       <button class="sound__button" onclick="switch__icons__sound()">
@@ -78,7 +78,7 @@
   <section class="footer">
     <div class="timer"><span id="time__js">--:--</span></div>
     <section class="bordertitle"><h1 class="title">Crack the Code</h1></section>
-    <button class="skip__knop" id="skip__knop__js"> SKIP ⯈⯈</button>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'puzzle2-dialoog1.html'"> CONTINUE ⯈⯈</button>
   </section>
 
 </body>

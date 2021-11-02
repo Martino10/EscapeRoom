@@ -17,20 +17,18 @@
     
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
     <title>Puzzle two</title>
-    <link rel="stylesheet" href="css/puzzle2done.css">
-    <script src="js/puzzle2.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="css/puzzle2.css">
+    <script src="js/puzzle2-dialoog.js" charset="utf-8" defer></script>
     <link rel="stylesheet" href="css/dialoog.css">
     <script src="js/dialogengine.js" charset="utf-8" defer></script>
 
 </head>
 <body>
   <section class="mainbody">
-    <!--
     <ol class = "dialogs" id = "js__dialogs" data-chunk = 2 data-snelheid = 20 data-wait = 1000>
 
-        <li data-naam = "Captain Sparrow" data-tekst = "Looks like the doorhandle is missing. If we can find it we should be able to open the door!"></li>
-    </ol> 
-    //-->
+        <li data-naam = "Benji" data-tekst = "Looks like the doorhandle is missing. If we can find it we should be able to open the door!"></li>
+    </ol>
 
     <section class="button__wrapper">
       <button class="sound__button" onclick="switch__icons__sound()">
@@ -39,12 +37,6 @@
         <figure class="x__mark" id="x__mark__js"></figure>
       </button>
     </section>
-    <div class="victorybox">
-      <h1>PUZZLE CLEARED<br><br></h1>
-      <p>Good work! But stay focused. You have</p><br>
-      <span id="js__timeleft">--:--</span>
-      <p><br>left!</p>
-    </div>
     <section class="puzzlebutton__wrapper">
         <button class="puzzle2_button" id="js__button3" onclick="button_clicked(3)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg3"></button>
         <button class="puzzle2_button" id="js__button5" onclick="button_clicked(5)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg5"></button>
@@ -58,7 +50,7 @@
   <section class="footer">
     <div class="timer"><span id="time__js">--:--</span></div>
     <section class="bordertitle"><h1 class="title">Title</h1></section>
-    <button class="skip__knop" id="skip__knop__js"> SKIP ⯈⯈</button>
+    <button class="skip__knop" id="skip__knop__js" onclick="puzzle2Next()"> SKIP ⯈⯈</button>
   </section>
 
 </body>

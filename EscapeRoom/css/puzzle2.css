@@ -28,13 +28,3 @@ body {
     top: 22%;
     z-index: 0;
 }
-
-.windowbutton {
-    padding: 27px;
-    background: transparent;
-    border: none;
-    font-size:0;
-    position: relative;
-    left: 38%;
-    top: 35%;
-}

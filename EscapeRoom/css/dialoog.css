@@ -43,3 +43,9 @@
     font-size: 150%;
     /* margin: 1 0; */
 }
+
+/* Voor puzzle 2 */
+
+.puzzlebutton__wrapper {
+    z-index: -1;
+}

@@ -6,7 +6,8 @@ let run_on_pages = [
     'puzzle2.html',
     'spel3.html',
     'puzzle1.html',
-    'puzzle2-window.html'
+    'puzzle2-window.html',
+    'puzzle2-2.html'
 ]
 
 const next = () => { //next page
@@ -80,7 +81,7 @@ const startTimer = (duration) => { //start the countdown
         timerVars.seconds = seconds;
         
         // save the time every 15 seconds
-        if (seconds % 15 == 0){
+        if (seconds % 1 == 0){
             saveTime()
         }
 
@@ -98,6 +99,13 @@ const updateDisplay = (minutes, seconds) => {
 
     let display = document.getElementById('time__js')
     display.textContent = getTimeString(minutes, seconds);
+
+}
+
+const getTimeRemaining = (minutes, seconds) => {
+
+    let timeRemaining = document.getElementById('js__timeleft')
+    timeRemaining.textContent = getTimeString(minutes, seconds);
 
 }
     // was dit voor testen?
@@ -140,6 +148,9 @@ window.addEventListener("load", () => {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
     let secRemaining = parseInt(sessionStorage.getItem("secRemaining"));
     updateDisplay(minRemaining, secRemaining)
+    if (window.location.href.includes('puzzle2done.html')) {
+        getTimeRemaining(minRemaining, secRemaining)
+    }
     startTimer(minRemaining * 60 + secRemaining);
 
 

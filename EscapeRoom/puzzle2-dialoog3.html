@@ -17,12 +17,19 @@
     
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
     <title>Puzzle two</title>
-    <link rel="stylesheet" href="css/puzzle2.css">
-    <script src="js/puzzle2.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="css/window.css">
+    <script src="js/puzzle2-dialoog.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="css/dialoog.css">
+    <script src="js/dialogengine.js" charset="utf-8" defer></script>
 
 </head>
 <body>
   <section class="mainbody">
+
+    <ol class = "dialogs" id = "js__dialogs" data-chunk = 2 data-snelheid = 20 data-wait = 1000>
+        <li data-naam = "Benji" data-tekst = "What the hell? It was behind us the whole time??"></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "Excellent work, (your name)! Let’s put the thing on and proceed."></li>
+    </ol>
 
     <section class="button__wrapper">
       <button class="sound__button" onclick="switch__icons__sound()">
@@ -31,20 +38,12 @@
         <figure class="x__mark" id="x__mark__js"></figure>
       </button>
     </section>
-    <section class="puzzlebutton__wrapper">
-        <button class="puzzle2_button" id="js__button3" onclick="button_clicked(3)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg3"></button>
-        <button class="puzzle2_button" id="js__button5" onclick="button_clicked(5)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg5"></button>
-        <button class="puzzle2_button" id="js__button6" onclick="button_clicked(6)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg6"></button>
-        <button class="puzzle2_button" id="js__button1" onclick="button_clicked(1)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg1"></button>
-        <button class="puzzle2_button" id="js__button4" onclick="button_clicked(4)"><img src="img/button_unpressed.png" class="puzzle2_button_img" id="buttonimg4"></button>
-        <button class="puzzle2_button" id="js__button2" onclick="button_clicked(2)"><img src="img/button_unpressed.png" class="puzzle2_button_img_last" id="buttonimg2"></button>
-    </section>
   </section>
 
   <section class="footer">
     <div class="timer"><span id="time__js">--:--</span></div>
     <section class="bordertitle"><h1 class="title">Title</h1></section>
-    <button class="skip__knop" id="skip__knop__js"> SKIP ⯈⯈</button>
+    <button class="skip__knop" id="skip__knop__js" onclick="puzzle2Next()"> SKIP ⯈⯈</button>
   </section>
 
 </body>

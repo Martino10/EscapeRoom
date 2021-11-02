@@ -2,14 +2,13 @@
 var current_round = 0
 const max_rounds = 10
 
-var display_time = 500
-var anim_time = 250
+var display_time = 750
 
 const max_hp = 3
 var current_hp = max_hp
 var hearts = []
 
-const round_nums = [1, 2, 2, 3, 4, 4, 5, 5, 6, 7]
+const round_nums = [1, 2, 2, 3, 3, 4, 4, 5, 5, 6]
 
 var entered_sequence = []
 var current_sequence = []

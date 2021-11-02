@@ -4,7 +4,7 @@ var timerVars = {};
 // Voeg hier de pagina naam toe van spellen, de timer is gepauzeerd als het niet op 1 van deze pagina's is
 let run_on_pages = [
     'puzzle2.html',
-    'spel3.html',
+    'puzzle3.html',
     'puzzle1.html',
     'puzzle2-window.html',
     'puzzle2-2.html'

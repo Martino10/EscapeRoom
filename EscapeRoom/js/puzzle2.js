@@ -51,7 +51,6 @@ function foundDoorhandle() {
     location.href = 'puzzle2-dialoog3.html';
 }
 
-
 //Voor de hints
 function showHint() {
     location.href = 'puzzle2-hint.html';

@@ -18,18 +18,17 @@
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
     <title>Bomb defusal</title>
     <link rel="stylesheet" href="css/spel3.css">
-    <script src="js/spel3.js" charset="utf-8" defer></script>
+    <!-- <script src="js/spel3.js" charset="utf-8" defer></script> -->
 
 </head>
 <body>
   <main class="mainbody">
-    <div class="hint-popup" id="js__hint" style="visibility: hidden" onclick="showHint()">?</div>
-
-    <div class="hintbox hidden" id="hintbox__js">
-      <h1>HINT<br><br></h1>
-      <p>Repeat the patterns the computer shows you to disable the safegaurds!</p><br>
-      <button class="hintbutton" onclick="closeHint()">Got it!</button>
-    </div>
+    <div class="victorybox">
+        <h1>PUZZLE CLEARED<br><br></h1>
+        <p>Good work! But stay focused. You have</p><br>
+        <span id="js__timeleft">--:--</span>
+        <p><br>left!</p>
+      </div>
 
     <section class = "bombview">
         <ul class = "buttons fadein">

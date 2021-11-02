@@ -13,15 +13,12 @@ function delete__input(){
     invulveld__3.innerHTML = ""
     invulveld__4.innerHTML = ""
     invulveld__5.innerHTML = ""
-    console.log("yeet")
 }
 
 
 function invullen(getal){
-    console.log("heh?")
     if (invulveld__1.innerHTML == ""){
         invulveld__1.innerHTML = getal
-        console.log("veld1")
     } else if (invulveld__2.innerHTML == ""){
         invulveld__2.innerHTML = getal
     } else if (invulveld__3.innerHTML == ""){
@@ -71,11 +68,12 @@ function closeHint() {
 
 var check_time = window.setInterval(function(){
     checkTime();
-  }, 5000);
+  }, 1000);
 
+  
 function checkTime() {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
-    if (minRemaining < 10) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
+    if (minRemaining < 7) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
         document.getElementById("js__hint").style.visibility = "visible";
     }
 }

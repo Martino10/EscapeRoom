@@ -17,15 +17,18 @@
     
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
     <title>StandaarOpstelling</title>
-    <link rel="stylesheet" href="css/JOUW-CSS-HIER.css">
-    <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script>
+    <link rel="stylesheet" href="css/choice.css">
+    <!-- <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script> -->
 
 </head>
 <body>
   <main class="mainbody">
     <section class="choicewindow">
-        <button>Redirect</button>
-        <button>Disarm</button>
+        <h1>Welcome, operator</h1>
+        <ul class = "buttonguy">
+            <li><button onClick="window.location.href = 'dialoog_4_redirect.html'">Redirect</button></li>
+            <li><button onClick="window.location.href = 'dialoog_4_abort.html'">Abort</button></li>
+        </ul>
     </section>
     
     <section class="button__wrapper">

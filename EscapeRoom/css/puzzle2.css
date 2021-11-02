@@ -1,5 +1,5 @@
-body {
-    background: url("../img/first_frame.png");
+.mainbody {
+    background: url("../img/first_frame.png") !important;
 }
 
 .puzzle2_button_img {

@@ -4,7 +4,7 @@ function registerName() {
     //set name
     if (input != "") {
         sessionStorage.setItem("playerName", input);
-        location.href = 'Dialoog_1.html';
+        location.href = 'dialoog_1.html';
     }
     else {
         alert("Error: Please register your name.");

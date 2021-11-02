@@ -60,7 +60,10 @@ const step = () => {
             setTimeout(step, wait)
         } else {
             console.log('dialog done')
-            document.getElementById('skip__knop__js').innerHTML = 'Continue ⯈⯈'
+            if (!window.location.href.includes('out_of_time')) {
+                document.getElementById('skip__knop__js').innerHTML = 'Continue ⯈⯈'
+            }
+            
         }
     } else {
         setTimeout(step, 1000/(speed*speed_modifier))

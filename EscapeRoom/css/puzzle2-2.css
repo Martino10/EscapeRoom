@@ -27,8 +27,9 @@
 
 body {
     background: url("../img/second_frame.png") !important;
-    background-position: center;
-    background-size: cover;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 .windowbutton {

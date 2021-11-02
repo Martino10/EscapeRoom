@@ -64,7 +64,7 @@ var check_time = window.setInterval(function(){
     if (!window.location.href.includes('hint')) {
         checkTime();
     }
-  }, 5000);
+  }, 1000);
 
 function checkTime() {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));

@@ -30,7 +30,9 @@ function invullen(getal){
         if (check__input() == false) {
             hint__scherm.innerHTML += invulveld__1.innerHTML + invulveld__2.innerHTML + invulveld__3.innerHTML + invulveld__4.innerHTML + invulveld__5.innerHTML + 
             " ==> " + maakhint(invulveld__1.innerHTML, invulveld__2.innerHTML, invulveld__3.innerHTML, invulveld__4.innerHTML, invulveld__5.innerHTML) + "<br>"
-        }
+        } else {
+
+        } window.location.href = 'puzzle1done.html'
     } 
 }
 

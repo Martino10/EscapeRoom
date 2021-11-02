@@ -231,3 +231,22 @@ const onload = () => {
 
 window.onload = onload
 
+//Voor de hints
+function showHint() {
+    document.getElementById('hintbox__js').classList.remove('hidden'); //Verander naar je eigen hintpagina
+}
+
+function closeHint() {
+    document.getElementById('hintbox__js').classList.add('hidden'); //Verander naar je eigen hintpagina
+    // window.history.back();
+}
+
+var check_time = window.setInterval(() => {
+    checkTime();
+  }, 5000);
+
+const checkTime = () => {
+    let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
+    if (minRemaining < 11) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
+        document.getElementById("js__hint").style.visibility = "visible";
+}}

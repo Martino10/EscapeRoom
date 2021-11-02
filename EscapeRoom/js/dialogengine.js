@@ -25,6 +25,7 @@ const generate_html = (naam, tekst, add_naam=false) => {
 }
 const update_element = (obj, html) => {
     obj.innerHTML = html
+    obj.scrollIntoView()
 }
 
 const process_vars = (text, vars=textvars) => {

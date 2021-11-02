@@ -61,7 +61,9 @@ function closeHint() {
 }
 
 var check_time = window.setInterval(function(){
-    checkTime();
+    if (!window.location.href.includes('hint')) {
+        checkTime();
+    }
   }, 5000);
 
 function checkTime() {

@@ -154,7 +154,7 @@ body{
   background: none;
 }
 
-form {
+.nameform {
   text-align: center;
   margin-top: 10%;
   margin-left: 25%;
@@ -173,6 +173,47 @@ form {
 }
 
 .submitName {
+  margin-top: 20px;
+  padding:10px;
+  border: 2px solid gray;
+  background-color:#ded0e1;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius:4px;
+}
+
+.hint-popup {
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px outset rgb(75, 75, 255);
+  width: 10%;
+  top: 3%;
+  left: 2%;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.victorybox {
+  text-align: center;
+  border: 3px solid black;
+  background-color: orange;
+  padding: 30px;
+  margin: 50px;
+  font-size: 16px;
+}
+
+.hintbox {
+  text-align: center;
+  border: 3px outset blue;
+  background-color: white;
+  padding: 30px;
+  margin: 50px;
+  font-size: 16px;
+}
+
+.hintbutton {
   margin-top: 20px;
   padding:10px;
   border: 2px solid gray;

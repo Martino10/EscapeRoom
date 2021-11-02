@@ -1,0 +1,68 @@
+.mainbody {
+    background: url('../img/cpu.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.choicewindow {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    width: 75%;
+    height: 75%;
+    background-color: rgba(90, 90, 90, 0.904);
+    margin: auto;
+    margin-top: 5%;
+    border-style: ridge;
+}
+
+.choicewindow > h2 {
+    font-size: 400%;
+    background-color: black;
+    color:greenyellow;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+b {
+    animation-name: vibe;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.buttonguy {
+    /* position: relative;
+    top: 0; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+
+.buttonguy > li {
+    margin:auto auto;
+    
+    
+}
+
+.buttonguy > li > button {
+    border-radius: 5px;
+    color: white;
+    padding: 0px 15%;
+    /* margin:auto auto; */
+    font-size: 400%;
+    background-color:red;
+    border-style:groove;
+}
+
+
+@keyframes vibe {
+    100% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    
+    0% {
+        opacity: 100%;
+    }
+}

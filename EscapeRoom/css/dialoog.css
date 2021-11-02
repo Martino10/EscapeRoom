@@ -1,4 +1,7 @@
-.mainbody {
+body {
+    background: rgba(0, 0, 0, 0.9) url(../img/water.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .dialogs {

@@ -1,5 +1,5 @@
-body {
-    background: url("../img/window_frame.png");
+.mainbody {
+    background: url("../img/window_frame.png") !important;
 }
 
 .doorhandlebutton {

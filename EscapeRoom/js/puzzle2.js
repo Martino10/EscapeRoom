@@ -51,7 +51,22 @@ function foundDoorhandle() {
     location.href = 'puzzle2-dialoog3.html';
 }
 
-window.addEventListener("load", () => {
-    
+//Voor de hints
+function showHint() {
+    location.href = 'puzzle2-hint.html';
 }
-, true)
+
+function closeHint() {
+    window.history.back();
+}
+
+var check_time = window.setInterval(function(){
+    checkTime();
+  }, 5000);
+
+function checkTime() {
+    let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
+    if (minRemaining < 5) {
+        document.getElementById("js__hint").style.visibility = "visible";
+    }
+}

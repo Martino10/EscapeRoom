@@ -201,12 +201,17 @@ body{
 }
 
 .victorybox {
+  position: absolute;
+  margin: auto;
   text-align: center;
   border: 3px solid black;
   background-color: orange;
   padding: 30px;
   margin: 50px;
   font-size: 16px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .hintbox {

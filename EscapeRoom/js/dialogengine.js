@@ -61,7 +61,7 @@ const step = () => {
         } else {
             console.log('dialog done')
             if (!window.location.href.includes('out_of_time')) {
-                document.getElementById('skip__knop__js').innerHTML = 'Continue ⯈⯈'
+                document.getElementById('skip__knop__js').innerHTML = 'CONTINUE ⯈⯈'
             }
             
         }

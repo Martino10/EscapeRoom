@@ -149,7 +149,7 @@ window.addEventListener("load", () => {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
     let secRemaining = parseInt(sessionStorage.getItem("secRemaining"));
     updateDisplay(minRemaining, secRemaining)
-    if (window.location.href.includes('puzzle2done.html')) {
+    if (window.location.href.includes('done')) {
         getTimeRemaining(minRemaining, secRemaining)
     }
     startTimer(minRemaining * 60 + secRemaining);

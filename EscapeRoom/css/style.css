@@ -209,6 +209,9 @@ body{
   padding: 30px;
   margin: 50px;
   font-size: 16px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .hintbox {

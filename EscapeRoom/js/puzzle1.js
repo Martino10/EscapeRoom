@@ -60,3 +60,22 @@ function maakhint(getal1, getal2, getal3, getal4, getal5){
     delete__input()
     return(CW + "CW & " + CC + "CC ")
 }
+
+function showHint() {
+    location.href = 'puzzle1-hint.html'; //Verander naar je eigen hintpagina
+}
+
+function closeHint() {
+    window.history.back();
+}
+
+var check_time = window.setInterval(function(){
+    checkTime();
+  }, 5000);
+
+function checkTime() {
+    let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
+    if (minRemaining < 10) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
+        document.getElementById("js__hint").style.visibility = "visible";
+    }
+}

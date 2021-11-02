@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <!-- Defaults, niet aankomen -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/timer.js" charset="utf-8" defer></script>
+    <script src="js/audio-control.js" charset="utf-8" defer></script>
+    
+    <!-- Vervang deze, comment het uit als je geen script of css hebt -->
+    <title>puzzle1</title>
+    <link rel="stylesheet" href="css/puzzle1.css">
+    <script src="js/puzzle1.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+  <section class="mainbody">
+
+    <div class="hint-popup" id="js__hint" style="visibility: hidden" onclick="showHint()">?</div>
+
+    <div class="hintbox">
+        <h1>HINT<br><br></h1>
+        <p>The captain of this submarine likes to use binary for some reason.</p><br>
+        <button class="hintbutton" onclick="closeHint()">Got it!</button>
+      </div>
+
+    <section class="button__wrapper">
+      <button class="sound__button" onclick="switch__icons__sound()">
+        <figure class="megaphone"></figure>
+        <figure class="signal__icon" id="signal__icon__js"></figure>
+        <figure class="x__mark" id="x__mark__js"></figure>
+      </button>
+    </section>
+
+    <section class="numberpad">
+      <button class="number__button" onclick="invullen(1)">1</button>
+      <button class="number__button" onclick="invullen(2)">2</button>
+      <button class="number__button" onclick="invullen(3)">3</button>
+      <button class="number__button" onclick="invullen(4)">4</button>
+      <button class="number__button" onclick="invullen(5)">5</button>
+      <button class="number__button" onclick="invullen(6)">6</button>
+      <button class="number__button" onclick="invullen(7)">7</button>
+      <button class="number__button" onclick="invullen(8)">8</button>
+      <button class="number__button" onclick="invullen(9)">9</button>
+      <button class="number__button" onclick="delete__input()">X</button>
+      <button class="number__button" onclick="invullen(0)">0</button>
+      <button class="number__button" onclick="backspace()"><p><==</p></button>
+    </section>
+    <section class="hints">
+      <p id = "hints__js">
+        14673 ==> 3CW & 1CC <br>
+        02637 ==> 0CW & 3CC <br>
+        69308 ==> 1CW & 0CC <br>
+        56073 ==> 2CW & 0CC <br>
+        59418 ==> 1CW & 1CC
+      </p>
+    </section>
+    <section>
+      <figure class="invulveld"> <p id="invulveld1__js"></p></figure>
+      <figure class="invulveld"> <p id="invulveld2__js"></p></figure>
+      <figure class="invulveld"> <p id="invulveld3__js"></p></figure>
+      <figure class="invulveld"> <p id="invulveld4__js"></p></figure>
+      <figure class="invulveld"> <p id="invulveld5__js"></p></figure>
+
+    </section>
+
+  </section>
+
+  <section class="footer">
+    <div class="timer"><span id="time__js">--:--</span></div>
+    <section class="bordertitle"><h1 class="title">Crack the Code</h1></section>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'puzzle2-dialoog1.html'"> SKIP ⯈⯈</button>
+  </section>
+
+</body>
+</html>

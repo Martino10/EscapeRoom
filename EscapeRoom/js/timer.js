@@ -88,7 +88,7 @@ const startTimer = (duration) => { //start the countdown
 
         updateDisplay(minutes, seconds)
 
-        if (--timer < 0) {
+        if (--timer < 0) {  
             console.log('TIMER RAN OUT!');
             window.location.href = 'out_of_time.html'
             timer = duration;

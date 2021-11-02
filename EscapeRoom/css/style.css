@@ -217,6 +217,8 @@ body{
   padding: 30px;
   margin: 50px;
   font-size: 16px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   position: absolute;
 }
 

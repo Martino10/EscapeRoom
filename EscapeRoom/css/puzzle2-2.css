@@ -26,7 +26,7 @@
 }
 
 body {
-    background: url("../img/second_frame.png") !important;
+    background: url("../img/second_frame.png") fill no-repeat !important;
     background-position: center;
     background-size: cover;
 }

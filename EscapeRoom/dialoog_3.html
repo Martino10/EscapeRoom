@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <!-- Defaults, niet aankomen -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/timer.js" charset="utf-8" defer></script>
+    <script src="js/audio-control.js" charset="utf-8" defer></script>
+    
+    <!-- Vervang deze, comment het uit als je geen script of css hebt -->
+    <title>Dialoog</title>
+    <link rel="stylesheet" href="css/dialoog.css">
+    <script src="js/dialogengine.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+  <section class="mainbody">
+
+    <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
+    <!-- data-snelheid geeft aan hoe vaak er nieuwe tekst geplaatst moet worden per seconde (dus 1000/snelheid) -->
+    <!-- data-wait geeft aan hoeveel MILLISECONDEN er tussen dialogen moeten zitten -->
+    <ol class = "dialogs" id = "js__dialogs" data-chunk = 1 data-snelheid = 40 data-wait = 1000>
+        <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
+        <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
+        <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
+        <li data-naam = "[YOUR_NAME}" data-tekst = "The control room?"></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "It appears to be. Benji, what can you make of this?" ></li>
+        <li data-naam = "Benji" data-tekst = "It looks like a standard submarine dashboard. The main interesting things are these buttons over here. It gives us the option to abort or redirect the bomb. First we have to disable the safety locks though" ></li>
+        <li data-naam = "Brutus" data-tekst = "Wait what? Redirect? Lets shoot it at the bastards who turned this thing on in the first place. Let's fire it at the government!" ></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "ABSOLUTELY NOT! We are better than them, and we will not lower ourselves to their level. Yes, the government is a piece of shit, but firing this bomb will also kill thousands of innocent civilians" ></li>
+        <li data-naam = "Benji" data-tekst = "Guys, we don't have very long anymore, we have to make a decision!" ></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "[Your name], do your thing! Disable the safety locks and abort the bomb, that is the only way we will win" ></li>
+        <li data-naam = "" data-tekst = "[Brutus hits Captain Sparrow and then looks at you]" ></li>
+        <li data-naam = "Brutus" data-tekst = "You will disable the safety lock, and redirect it at the government, or the next hit is for you" ></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "I don’t go down that easily, Benji help me take down Brutus, [Your name] Abort it, NOW!" ></li>
+
+    </ol>
+
+    <section class="button__wrapper">
+      <button class="sound__button" onclick="switch__icons__sound()">
+        <figure class="megaphone"></figure>
+        <figure class="signal__icon" id="signal__icon__js"></figure>
+        <figure class="x__mark" id="x__mark__js"></figure>
+      </button>
+    </section>
+
+  </section>
+
+  <section class="footer">
+    <div class="timer"><span id="time__js">--:--</span></div>
+    <section class="bordertitle"><h1 class="title">Title</h1></section>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'puzzle3.html'"> SKIP ⯈⯈</button>
+  </section>
+
+</body>
+</html>

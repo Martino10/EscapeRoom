@@ -27,18 +27,16 @@
     <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
     <!-- data-snelheid geeft aan hoe vaak er nieuwe tekst geplaatst moet worden per seconde (dus 1000/snelheid) -->
     <!-- data-wait geeft aan hoeveel MILLISECONDEN er tussen dialogen moeten zitten -->
-    <ol class = "dialogs" id = "js__dialogs" data-chunk = 1 data-snelheid = 40 data-wait = 1000>
+    <ol class = "dialogs" id = "js__dialogs" data-chunk = 2 data-snelheid = 10 data-wait = 1000>
         <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
         <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
         <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
-        <li data-naam = "Benji" data-tekst = "Why did we get this awful and dangerous job!?"></li>
-        <li data-naam = "Captain sparrow" data-tekst = "I already told you, the rest of our rebel crew is preparing to take over R.U.T.E on the mainland. We were the only few people who remained behind, AND are able to complete the mission. We only have about 15 minutes before it launches" ></li>
-        <li data-naam = "Benji" data-tekst = "It’s still not fair, I am supposed to be in my house, watching the communication between the island and our team. Now I am here, with you guys." ></li>
-        <li data-naam = "Brutus" data-tekst = "Shut up Benji, we’re trying to do our jobs. I can't concentrate with you YELLING IN MY EAR" ></li>
-        <li data-naam = "Benji" data-tekst = "Okay, I am sorry..." ></li>
-        <li data-naam = "Captain Sparrow" data-tekst = "How are you doing [YOUR_NAME]? Nervous?" ></li>
-        <li data-naam = "[YOUR_NAME]" data-tekst = "A little" ></li>
-        <li data-naam = "Captain sparrow:" data-tekst = "Don’t worry, that's normal. Oh heads up, here is your first challenge" ></li>
+        <li data-naam = "Captain sparrow" data-tekst = "Great Job [YOUR_NAME], I knew we could count on you, but opening that door was the first of the challenges ahead. Our next objective is to get to the control room. Benji, where do we go from here?"></li>
+        <li data-naam = "Benji" data-tekst = "We want to go straight, we should be able to find the control room at the end of the submarine. That door is unfortunately not powered by anything, so I can't hack my way into it. We’ll have to open it the old fashioned way" ></li>
+        <li data-naam = "Captain sparrow" data-tekst = "You heard the man, go forward, and find that door." ></li>
+        <li data-naam = "Brutus" data-tekst = "Stay behind me [YOUR_NAME], the men on this submarine are military trained. Let me handle them." ></li>
+        <li data-naam = "[YOUR_NAME]" data-tekst = "Thanks" ></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "There is the door! Hurry up and get it open, we are still on a time	clock, me and Brutus will keep the guards busy." ></li>
 
     </ol>
 
@@ -55,7 +53,7 @@
   <section class="footer">
     <div class="timer"><span id="time__js">--:--</span></div>
     <section class="bordertitle"><h1 class="title">Title</h1></section>
-    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'puzzle1.html'"> SKIP ⯈⯈</button>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'puzzle2-dialoog1.html'"> SKIP ⯈⯈</button>
   </section>
 
 </body>

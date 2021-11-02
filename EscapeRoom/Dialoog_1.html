@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <!-- Defaults, niet aankomen -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/timer.js" charset="utf-8" defer></script>
+    <script src="js/audio-control.js" charset="utf-8" defer></script>
+    
+    <!-- Vervang deze, comment het uit als je geen script of css hebt -->
+    <title>Dialoog</title>
+    <link rel="stylesheet" href="css/dialoog.css">
+    <script src="js/dialogengine.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+  <section class="mainbody">
+
+    <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
+    <!-- data-snelheid geeft aan hoe vaak er nieuwe tekst geplaatst moet worden per seconde (dus 1000/snelheid) -->
+    <!-- data-wait geeft aan hoeveel MILLISECONDEN er tussen dialogen moeten zitten -->
+    <ol class = "dialogs" id = "js__dialogs" data-chunk = 1 data-snelheid = 40 data-wait = 1000>
+        <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
+        <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
+        <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
+        <li data-naam = "Benji" data-tekst = "Why did we get this awful and dangerous job!?"></li>
+        <li data-naam = "Captain sparrow" data-tekst = "I already told you, the rest of our rebel crew is preparing to take over R.U.T.E on the mainland. We were the only few people who remained behind, AND are able to complete the mission. We only have about 15 minutes before it launches" ></li>
+        <li data-naam = "Benji" data-tekst = "It’s still not fair, I am supposed to be in my house, watching the communication between the island and our team. Now I am here, watching you guys." ></li>
+        <li data-naam = "Brutus" data-tekst = "Shut up Benji, we’re trying to do our jobs. I can't concentrate with you YELLING IN MY EAR" ></li>
+        <li data-naam = "Benji" data-tekst = "Okay, I am sorry..." ></li>
+        <li data-naam = "Captain Sparrow" data-tekst = "How are you doing (your name)? Nervous?" ></li>
+        <li data-naam = "[YOUR_NAME]" data-tekst = "A little" ></li>
+        <li data-naam = "Captain sparrow:" data-tekst = "Don’t worry, that's normal. Oh heads up, here is your first challenge" ></li>
+
+    </ol>
+
+    <section class="button__wrapper">
+      <button class="sound__button" onclick="switch__icons__sound()">
+        <figure class="megaphone"></figure>
+        <figure class="signal__icon" id="signal__icon__js"></figure>
+        <figure class="x__mark" id="x__mark__js"></figure>
+      </button>
+    </section>
+
+  </section>
+
+  <section class="footer">
+    <div class="timer"><span id="time__js">--:--</span></div>
+    <section class="bordertitle"><h1 class="title">Title</h1></section>
+    <button class="skip__knop" id="skip__knop__js"> SKIP ⯈⯈</button>
+  </section>
+
+</body>
+</html>

@@ -28,9 +28,11 @@ body{
 }
 
 .button__wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width:5rem;
+  height:5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .sound__button{

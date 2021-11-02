@@ -58,6 +58,9 @@ const step = () => {
         msg_index++;
         if (msg_index < all_msg.length) {
             setTimeout(step, wait)
+        } else {
+            console.log('dialog done')
+            document.getElementById('skip__knop__js').innerHTML = 'Continue ⯈⯈'
         }
     } else {
         setTimeout(step, 1000/(speed*speed_modifier))

@@ -155,8 +155,8 @@ window.addEventListener("load", () => {
 
 
     window.portraitchecker = setInterval(doPortraitCheck, 500)
-    // if (isTimerPaused()) {
-    //     document.getElementById('time__js').style = 'color: gray;';
+    if (isTimerPaused()) {
+        document.getElementById('time__js').style = 'color: gray;';
     // } else {
     //     document.getElementById('skip__knop__js').disabled = true;
     // }

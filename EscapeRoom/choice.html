@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <!-- Defaults, niet aankomen -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/timer.js" charset="utf-8" defer></script>
+    <script src="js/audio-control.js" charset="utf-8" defer></script>
+    
+    <!-- Vervang deze, comment het uit als je geen script of css hebt -->
+    <title>StandaarOpstelling</title>
+    <link rel="stylesheet" href="css/JOUW-CSS-HIER.css">
+    <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+  <main class="mainbody">
+    <section class="choicewindow">
+        <button>Redirect</button>
+        <button>Disarm</button>
+    </section>
+    
+    <section class="button__wrapper">
+      <button class="sound__button" onclick="switch__icons__sound()">
+        <figure class="megaphone"></figure>
+        <figure class="signal__icon" id="signal__icon__js"></figure>
+        <figure class="x__mark" id="x__mark__js"></figure>
+      </button>
+    </section>
+
+  </main>
+
+  <section class="footer">
+    <div class="timer"><span id="time__js">--:--</span></div>
+    <section class="bordertitle"><h1 class="title">Title</h1></section>
+    <button class="skip__knop" id="skip__knop__js"> SKIP ⯈⯈</button>
+  </section>
+
+</body>
+</html>

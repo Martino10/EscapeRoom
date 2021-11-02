@@ -15,25 +15,11 @@ html{
 
 body{
   background-color: #5f7ab0;
-  background: url("../img/Background.PNG");
   backdrop-filter: blur(4px);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 20% 60% 12% 8%;
 
-}
-
-.upper__screen{
-  display:grid;
-  grid-template-columns: 10% 80% 10%;
-}
-
-.title{
-  font-size: 450%;
-  margin: 1rem auto;
 }
 
 .button__wrapper{
@@ -127,10 +113,11 @@ body{
   transform:translateX(-50%)rotate(90deg);
 }
 
-.middle__screen{
+.mainbody{
   display:grid;
-  grid-template-columns: 20% 33% 32% 15%;
+  grid-template-columns: 12.5% 25% 25% 25% 12.5%;
 }
+
 
 .numberpad{
   display: flex;
@@ -146,14 +133,9 @@ body{
   background:#3a5892;
 }
 
-.placeholder__numberpad{
-  width:25%;
-  height:20%;
-}
-
 .hints{
   background: rgba(255, 255, 255, 0.4);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .invulveld{

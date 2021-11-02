@@ -80,7 +80,7 @@ const startTimer = (duration) => { //start the countdown
         timerVars.minutes = minutes;
         timerVars.seconds = seconds;
         
-        // save the time every 15 seconds
+        // save the time every 1 second
         if (seconds % 1 == 0){
             saveTime()
         }

@@ -243,10 +243,10 @@ function closeHint() {
 
 var check_time = window.setInterval(() => {
     checkTime();
-  }, 5000);
+  }, 1000);
 
 const checkTime = () => {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
-    if (minRemaining < 11) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
+    if (minRemaining < 3) { //Verander naar minuut waar je wilt dat de hint beschikbaar is
         document.getElementById("js__hint").style.visibility = "visible";
 }}

@@ -13,6 +13,10 @@ html{
   font-size: 62.5%;
 }
 
+.hidden {
+  display: none;
+}
+
 body{
   height: 100vh;
   display: grid;
@@ -183,6 +187,7 @@ body{
 }
 
 .hint-popup {
+  z-index: 1;
   position: absolute;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
@@ -205,6 +210,7 @@ body{
 }
 
 .hintbox {
+  position: absolute;
   text-align: center;
   border: 3px outset blue;
   background-color: white;

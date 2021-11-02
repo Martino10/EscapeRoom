@@ -154,7 +154,6 @@ window.addEventListener("load", () => {
     }
     startTimer(minRemaining * 60 + secRemaining);
 
-
     window.portraitchecker = setInterval(doPortraitCheck, 500)
     if (isTimerPaused()) {
         document.getElementById('time__js').style = 'color: gray;';}

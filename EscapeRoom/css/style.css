@@ -183,7 +183,7 @@ body{
 }
 
 .hint-popup {
-  position: relative;
+  position: absolute;
   padding: 20px;
   background: rgba(255, 255, 255, 0.8);
   border: 5px outset rgb(75, 75, 255);

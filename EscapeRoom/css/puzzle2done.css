@@ -3,6 +3,7 @@ body {
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
+
 }
 
 .puzzle2_button_img {
@@ -10,7 +11,7 @@ body {
     width: auto;
     margin-right: 22px;
 }
-
+    
 .puzzle2_button_img_last {
     height: 40px;
     width: auto;

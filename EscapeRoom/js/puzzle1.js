@@ -28,10 +28,12 @@ function invullen(getal){
     } else if (invulveld__5.innerHTML == ""){
         invulveld__5.innerHTML = getal
         if (check__input() == false) {
-            hint__scherm.innerHTML += invulveld__1.innerHTML + invulveld__2.innerHTML + invulveld__3.innerHTML + invulveld__4.innerHTML + invulveld__5.innerHTML + 
+            let new_hint = invulveld__1.innerHTML + invulveld__2.innerHTML + invulveld__3.innerHTML + invulveld__4.innerHTML + invulveld__5.innerHTML + 
             " ==> " + maakhint(invulveld__1.innerHTML, invulveld__2.innerHTML, invulveld__3.innerHTML, invulveld__4.innerHTML, invulveld__5.innerHTML) + "<br>"
+            hint__scherm.innerHTML += new_hint;
+            
         } else {
-        window.location.href = 'puzzle1done.html'
+            window.location.href = 'puzzle1done.html'
         }
     } 
 }

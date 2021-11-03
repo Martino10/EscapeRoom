@@ -77,6 +77,7 @@ const win = () => {
     // guess when this is called
     disallow_input(true)
     display_item('spel3_icon_win')
+    window.location.href = "choice.html"
 }
 
 // const print_to_paper = print

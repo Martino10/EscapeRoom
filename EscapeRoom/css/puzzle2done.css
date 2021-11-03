@@ -1,7 +1,9 @@
 body {
-    background: url("../img/last_frame.png") no-repeat !important;
-    background-position: center;
-    background-size: cover;
+    background: url("../img/last_frame.png") !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
 }
 
 .puzzle2_button_img {
@@ -9,7 +11,7 @@ body {
     width: auto;
     margin-right: 22px;
 }
-
+    
 .puzzle2_button_img_last {
     height: 40px;
     width: auto;

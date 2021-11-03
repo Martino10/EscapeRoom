@@ -32,22 +32,19 @@ body{
   width:5rem;
   height:5rem;
   position: absolute;
+  cursor: pointer;
   top: 1rem;
   right: 1rem;
-}
-
-.sound__button{
-  width: 5rem;
-  height: 5rem;
-  cursor: pointer;
+  background:rgb(47, 132, 230);
 }
 
 .megaphone{
   height:1.5rem;
   width:1.5rem;
   background: black;
-  position: relative;
-  transform:translateX(20%);
+  position: absolute;
+  top:1.7rem;
+  right:3rem;
 }
 
 .megaphone::after{
@@ -72,7 +69,9 @@ body{
   border-right: solid 0.1rem transparent;
   border-bottom: solid 0.1rem transparent;
   border-left: solid 0.1rem transparent;
-  transform:translateX(360%) translateY(-150%)scale(1.6) rotate(90deg);
+  transform:scale(1.6) rotate(90deg);
+  top: 2.1rem;
+  right: 1.9rem;
 }
 
 .signal__icon::before {
@@ -109,7 +108,9 @@ body{
   height:1.5rem;
   width:0.3rem;
   background: black;
-  transform:translateX(1050%) translateY(-90%) rotate(45deg);
+  transform:rotate(45deg);
+  top: 1.8rem;
+  right: 1.3rem;
 }
 
 .x__mark::before{
@@ -118,7 +119,7 @@ body{
   height:1.5rem;
   width:0.3rem;
   background: black;
-  transform:translateX(-50%)rotate(90deg);
+  transform:rotate(90deg);
 }
 
 .footer{

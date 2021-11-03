@@ -26,10 +26,9 @@
 }
 
 body {
-    background: url("../img/second_frame.png") !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+    background: url("../img/second_frame.png") no-repeat !important;
+    background-position: center;
+    background-size: cover;
 }
 
 .windowbutton {

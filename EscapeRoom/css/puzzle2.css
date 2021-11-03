@@ -1,8 +1,7 @@
 body {
-    background: url("../img/first_frame.png") !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+    background: url("../img/first_frame.png") no-repeat !important;
+    background-position: center;
+    background-size: cover;
 }
 
 .puzzle2_button_img {

@@ -53,11 +53,11 @@ const foundDoorhandle = () => {
 
 //Voor de hints
 const showHint = () => {
-    location.href = 'puzzle2-hint.html';
+    document.getElementById('hintbox__js').classList.remove('hidden');
 }
 
 const closeHint = () => {
-    window.history.back();
+    document.getElementById('hintbox__js').classList.add('hidden');
 }
 
 var check_time = window.setInterval(function(){

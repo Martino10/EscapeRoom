@@ -38,6 +38,7 @@ body {
     z-index: 0;
 }
 
+/* min width 1000px */
 @media only screen and (min-height: 375px) and (max-height: 386px) and (min-width: 1000px){
     .puzzlebutton__wrapper {
         width: 30%;

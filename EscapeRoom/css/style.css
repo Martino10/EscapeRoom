@@ -228,6 +228,7 @@ body{
   margin-left: 50%;
   transform: translateX(-50%);
   position: absolute;
+  z-index: 1;
 }
 
 .hintbutton {

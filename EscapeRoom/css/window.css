@@ -1,5 +1,9 @@
 body {
-    background: url("../img/window_frame.png") !important;
+    background-image: url("../img/window_frame.png") !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-color: gray;
 }
 
 .doorhandlebutton {
@@ -10,4 +14,17 @@ body {
     position: relative;
     left: 54%;
     top: 63%;
+}
+
+@media only screen and (min-height: 376px) and (max-height: 450px) and (min-width: 1000px){
+    .doorhandlebutton {
+        padding: 20px;
+        left: 53%;
+    }
+}
+
+@media only screen and (min-height: 450px) and (max-height: 600px) and (min-width: 1000px){
+    .doorhandlebutton {
+        padding: 25px;
+    }
 }

@@ -62,6 +62,22 @@ function maakhint(getal1, getal2, getal3, getal4, getal5){
     return(CW + "CW & " + CC + "CC ")
 }
 
+let options = ["1","2","3","4","5","6","7","8","9","0"]
+
+function backspace(){
+    if (options.includes(invulveld__5.innerHTML)){
+        invulveld__5.innerHTML = ""
+    } else if (options.includes(invulveld__4.innerHTML)){
+        invulveld__4.innerHTML = ""
+    } else if (options.includes(invulveld__3.innerHTML)){
+        invulveld__3.innerHTML = ""
+    } else if (options.includes(invulveld__2.innerHTML)){
+        invulveld__2.innerHTML = ""
+    } else if (options.includes(invulveld__1.innerHTML)){
+        invulveld__1.innerHTML = ""
+    }
+}
+
 function showHint() {
     location.href = 'puzzle1-hint.html'; //Verander naar je eigen hintpagina
 }

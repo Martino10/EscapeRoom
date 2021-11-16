@@ -1,44 +1,220 @@
-.puzzle2_button_img {
-    height: 40px;
-    width: auto;
-    margin-right: 22px;
-}
-
-.puzzle2_button_img_last {
-    height: 40px;
-    width: auto;
-}
-
-.puzzle2_button {
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	outline: inherit;
-}
-
-.puzzlebutton__wrapper {
-    position: fixed;
-    left: 55%;
-    top: 22%;
-    z-index: 0;
-}
-
-body {
-    background: url("../img/second_frame.png") !important;
-    background-position: center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-
-}
-
 .windowbutton {
     padding: 27px;
     background: transparent;
     border: none;
     font-size:0;
-    position: relative;
+    position: absolute;
     left: 38%;
     top: 35%;
+}
+
+body {
+    background-image: url("../img/second_frame.png") !important;
+    background-position: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.puzzle2_button_img {
+    height: auto;
+    width: 100%;
+}
+
+.puzzle2_button {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 100%;
+    cursor: pointer;
+}
+
+.puzzlebutton__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    position: absolute;
+    left: 54%;
+    top: 22%;
+    z-index: 0;
+}
+
+/* min width 1000px */
+@media only screen and (min-height: 375px) and (max-height: 386px) and (min-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 30%;
+    }
+    .windowbutton {
+        left: 42%;
+        top: 34%;
+    }
+}
+
+@media only screen and (min-height: 386px) and (max-height: 418px) and (min-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 32%;
+    }
+    .windowbutton {
+        left: 42%;
+        top: 34%;
+    }
+}
+
+@media only screen and (min-height: 418px) and (max-height: 470px) and (min-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 35%;
+    }
+    .windowbutton {
+        left: 41%;
+        top: 34%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-height: 471px) and (max-height: 500px) and (min-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 40%;
+    }
+    .windowbutton {
+        left: 40%;
+        top: 34%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-height: 501px) and (max-height: 540px) and (min-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 43%;
+    }
+    .windowbutton {
+        left: 40%;
+        top: 35%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-height: 541px) and (max-height: 600px) and (min-width: 1000px){
+    .windowbutton {
+        left: 39%;
+        top: 35%;
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (min-width: 1000px) {
+    .puzzlebutton__wrapper {
+        top: 24%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 37%;
+        padding: 30px;
+    }
+}
+
+/* max width 1000px */
+@media only screen and (min-height: 375px) and (max-height: 386px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        width: 40%;
+    }
+    .windowbutton {
+        left: 40%;
+        top: 34%;
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-height: 386px) and (max-height: 418px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        top: 23%;
+        width: 43%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 34%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 418px) and (max-height: 470px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        top: 24%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 36%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 471px) and (max-height: 500px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        top: 27%;
+    }
+}
+
+@media only screen and (min-height: 501px) and (max-height: 540px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        top: 28%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 38%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 541px) and (max-height: 600px) and (max-width: 1000px){
+    .puzzlebutton__wrapper {
+        top: 30%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 38%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (max-width: 1000px) {
+    .puzzlebutton__wrapper {
+        top: 31%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 40%;
+        padding: 27px;
+    }
+}
+
+/* max width 900px */
+@media only screen and (min-height: 375px) and (max-height: 386px) and (max-width: 900px){
+    .puzzlebutton__wrapper {
+        width: 47%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 38%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 386px) and (max-height: 418px) and (max-width: 900px){
+    .puzzlebutton__wrapper {
+        width: 46%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 38%;
+        padding: 27px;
+    }
+}
+
+@media only screen and (min-height: 600px) and (max-width: 900px) {
+    .puzzlebutton__wrapper {
+        top: 33%;
+    }
+    .windowbutton {
+        left: 39%;
+        top: 38%;
+        padding: 27px;
+    }
 }

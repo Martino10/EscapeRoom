@@ -134,6 +134,7 @@ body{
   border-bottom: none;
 }
 .footer > progress {
+  width: 100%;
   grid-column-start: 0;
   grid-column-end: span 3;
 }

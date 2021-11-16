@@ -125,12 +125,17 @@ body{
 .footer{
   text-align: center;
   display: grid;
+  grid-template-rows: 15% 85%;
   grid-template-columns: 25% 50% 25%;
   background: lightgray;
   border-style: solid;
   border-width: 0.1rem;
   border-color: black;
   border-bottom: none;
+}
+.footer > progress {
+  grid-column-start: 0;
+  grid-column-end: span 3;
 }
 
 .timer{

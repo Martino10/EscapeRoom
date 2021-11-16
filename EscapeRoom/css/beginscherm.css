@@ -5,10 +5,6 @@
 
 }
 
-:root{
-
-}
-
 html{
   font-size: 62.5%;
 }
@@ -40,7 +36,7 @@ body{
 .beschrijving{
   margin: auto;
   background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(6px);
   height:89%;
   width:70%;
 }
@@ -60,8 +56,8 @@ body{
 
 .start__spel{
   font-size: 2.7rem;
-  height:5rem;
-  width:15rem;
+  height:50%;
+  width:25%;
 }
 
 .bronnen__wrapper{
@@ -72,6 +68,61 @@ body{
 
 .bronnen{
   font-size: 2.7rem;
-  height:5rem;
-  width:15rem;
+  height:50%;
+  width:25%;
+}
+
+
+@media only screen and (max-width: 1000px) and (max-width: 1100px) and (max-height: 600px) {
+  .start__spel{
+    height:75%;
+  }
+  .bronnen{
+    height:75%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) and (min-height: 400px) {
+  .beschrijving__text {
+    font-size: 2.0rem;
+  }
+  .title{
+    font-size: 650%;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) and (min-height: 500px) {
+  .beschrijving__text {
+    font-size: 2.5rem;
+  }
+  .title{
+    font-size: 850%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) and (min-height: 600px) {
+  .beschrijving__text {
+    font-size: 3rem;
+  }
+  .title{
+    font-size: 1000%;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) and (min-height: 700px){
+  .beschrijving__text {
+    font-size: 3.5rem;
+  }
+  .title{
+    font-size: 1100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) and (min-height: 700px){
+  .beschrijving__text {
+    font-size: 4rem;
+  }
+  .title{
+    font-size: 1300%;
+  }
 }

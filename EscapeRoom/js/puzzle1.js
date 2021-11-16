@@ -28,8 +28,8 @@ function invullen(getal){
     } else if (invulveld__5.innerHTML == ""){
         invulveld__5.innerHTML = getal
         if (check__input() == false) {
-            let new_hint = invulveld__1.innerHTML + invulveld__2.innerHTML + invulveld__3.innerHTML + invulveld__4.innerHTML + invulveld__5.innerHTML + 
-            " ==> " + maakhint(invulveld__1.innerHTML, invulveld__2.innerHTML, invulveld__3.innerHTML, invulveld__4.innerHTML, invulveld__5.innerHTML) + "<br>"
+            let new_hint = "<br>" + invulveld__1.innerHTML + invulveld__2.innerHTML + invulveld__3.innerHTML + invulveld__4.innerHTML + invulveld__5.innerHTML + 
+            " ==> " + maakhint(invulveld__1.innerHTML, invulveld__2.innerHTML, invulveld__3.innerHTML, invulveld__4.innerHTML, invulveld__5.innerHTML)
             hint__scherm.innerHTML += new_hint;
             
         } else {

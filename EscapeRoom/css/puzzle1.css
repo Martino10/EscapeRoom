@@ -5,9 +5,6 @@
 
 }
 
-:root{
-
-}
 
 html{
   font-size: 62.5%;
@@ -41,6 +38,7 @@ body{
   width:25%;
   height:20%;
   background:#3a5892;
+  font-size: 2rem;
 }
 
 .hints{
@@ -51,10 +49,113 @@ body{
 
 .invulveld{
   display: flex;
-  height:3.2rem;
-  width:3.2rem;
+  height:15%;
+  width:30%;
+  font-size:2rem;
   background: gray;
   margin: 1rem auto;
   justify-content: center;
   align-items: center;
+}
+
+
+@media only screen and (min-width:800px) {
+  .hints{
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  .hints{
+    font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .hints{
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (min-width:1300px) {
+  .hints{
+    font-size: 3.2rem;
+  }
+}
+
+@media only screen and (min-width:1400px) {
+  .hints{
+    font-size: 3.4rem;
+  }
+}
+
+@media only screen and (min-width:1800px) {
+  .hints{
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width:2100px) {
+  .hints{
+    font-size: 4.8rem;
+  }
+}
+
+
+
+
+@media only screen and (min-height:400px) {
+  .numberpad{
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+}
+
+@media only screen and (min-height:500px) {
+  .numberpad{
+    padding-top:6rem;
+    padding-bottom:6rem;
+  }
+}
+
+@media only screen and (min-height:600px) {
+  .numberpad{
+    padding-top:12rem;
+    padding-bottom:12rem;
+  }
+}
+
+@media only screen and (min-height:700px) {
+  .numberpad{
+    padding-top:18rem;
+    padding-bottom:18rem;
+  }
+}
+
+@media only screen and (min-height:900px) {
+  .numberpad{
+    padding-top:24rem;
+    padding-bottom:24rem;
+  }
+}
+
+@media only screen and (min-height:1200px) {
+  .numberpad{
+    padding-top:30rem;
+    padding-bottom:30rem;
+  }
+}
+
+@media only screen and (min-height:1600px) {
+  .numberpad{
+    padding-top:35rem;
+    padding-bottom:35rem;
+  }
+}
+
+@media only screen and (min-height:1800px) {
+  .numberpad{
+    padding-top:40rem;
+    padding-bottom:40rem;
+  }
 }

@@ -1,14 +1,15 @@
 
 var current_round = 0
-const max_rounds = 10
+const max_rounds = 6
 
 var display_time = 750
+var sleep_time = 100
 
 const max_hp = 3
 var current_hp = max_hp
 var hearts = []
 
-const round_nums = [1, 2, 2, 3, 3, 4, 4, 5, 5, 6]
+const round_nums = [1, 2, 3, 4, 5, 6, 4, 5, 5, 6]
 
 var entered_sequence = []
 var current_sequence = []
@@ -77,7 +78,7 @@ const win = () => {
     // guess when this is called
     disallow_input(true)
     display_item('spel3_icon_win')
-    window.location.href = "choice.html"
+    window.location.href = "puzzle3done.html"
 }
 
 // const print_to_paper = print
@@ -133,6 +134,7 @@ const display_sequence = (seq = current_sequence) => {
 }
 
 const display_item = (itemname) => {
+    promptimg.src = 'img/spel3_icon_none.png'
     if (itemname.endsWith('.png') == false) {
         itemname += '.png'
     }
@@ -142,8 +144,9 @@ const display_item = (itemname) => {
     } else {
         promptimg.classList.add('fadein')
     }
+    setTimeout( () => {
     promptimg.src = 'img/'+itemname
-
+    }, sleep_time)
 }
 
 const validate_input = (ent = entered_sequence, cor = current_sequence) => {

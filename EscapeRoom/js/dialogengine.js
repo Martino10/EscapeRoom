@@ -96,6 +96,12 @@ const main = () => {
         case page.includes('dialoog_3'):
             document.body.style.backgroundImage = "url(img/dialoog_3.jpg)";
             break;
+        case page.includes('dialoog_4_abort'):
+            document.body.style.backgroundImage = "url(img/dialoog_4_abort.jpg)";
+            break;
+        case page.includes('dialoog_4_redirect'):
+            document.body.style.backgroundImage = "url(img/dialoog_4_redirect.jpg)";
+            break;
     }
 }
 

@@ -9,7 +9,7 @@ buttonClicked = {
 }
 clickOrder = [];
 
-function checkAll() {
+const checkAll = () => {
     if (buttonClicked[1] && buttonClicked[2] && buttonClicked[3] && buttonClicked[4] && buttonClicked[5] && buttonClicked[6]) {
         if (clickOrder[0] == 1 && clickOrder[1] == 2 && clickOrder[2] == 3 && clickOrder[3] == 4 && clickOrder[4] == 5 && clickOrder[5] == 6) {
             location.href = 'puzzle2-dialoog2.html';
@@ -43,21 +43,21 @@ const button_clicked = (num) => {
     checkAll();
 }
 
-function viewWindow() {
+const viewWindow = () => {
     location.href = 'puzzle2-window.html';
 }
 
-function foundDoorhandle() {
+const foundDoorhandle = () => {
     location.href = 'puzzle2-dialoog3.html';
 }
 
 //Voor de hints
-function showHint() {
-    location.href = 'puzzle2-hint.html';
+const showHint = () => {
+    document.getElementById('hintbox__js').classList.remove('hidden');
 }
 
-function closeHint() {
-    window.history.back();
+const closeHint = () => {
+    document.getElementById('hintbox__js').classList.add('hidden');
 }
 
 var check_time = window.setInterval(function(){
@@ -66,7 +66,7 @@ var check_time = window.setInterval(function(){
     }
   }, 1000);
 
-function checkTime() {
+const checkTime = () => {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
     if (minRemaining < 5) {
         document.getElementById("js__hint").style.visibility = "visible";

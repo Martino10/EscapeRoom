@@ -83,6 +83,20 @@ const main = () => {
     console.log(chunk,'letters every',1000/speed,'seconds, with',wait/1000,'seconds between dialogs')
 
     step();
+
+    //change dialogue background
+    const page = window.location.href;
+    switch (true) {
+        case page.includes('dialoog_1'):
+            document.body.style.backgroundImage = "url(img/dialoog_1.jpg)";
+            break;
+        case page.includes('dialoog_2'):
+            document.body.style.backgroundImage = "url(img/dialoog_2.jpg)";
+            break;
+        case page.includes('dialoog_3'):
+            document.body.style.backgroundImage = "url(img/dialoog_3.jpg)";
+            break;
+    }
 }
 
 

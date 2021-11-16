@@ -1,5 +1,6 @@
 body {
-    background: rgba(0, 0, 0, 0.9) url(../img/water.jpg);
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: url(../img/water.jpg);
     background-position: center;
     background-size: cover;
 }

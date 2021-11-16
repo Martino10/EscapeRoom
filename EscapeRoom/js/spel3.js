@@ -3,6 +3,7 @@ var current_round = 0
 const max_rounds = 6
 
 var display_time = 750
+var sleep_time = 100
 
 const max_hp = 3
 var current_hp = max_hp
@@ -133,6 +134,7 @@ const display_sequence = (seq = current_sequence) => {
 }
 
 const display_item = (itemname) => {
+    promptimg.src = 'img/spel3_icon_none.png'
     if (itemname.endsWith('.png') == false) {
         itemname += '.png'
     }
@@ -142,8 +144,9 @@ const display_item = (itemname) => {
     } else {
         promptimg.classList.add('fadein')
     }
+    setTimeout( () => {
     promptimg.src = 'img/'+itemname
-
+    }, sleep_time)
 }
 
 const validate_input = (ent = entered_sequence, cor = current_sequence) => {

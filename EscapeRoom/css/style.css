@@ -145,7 +145,7 @@ body{
   margin: auto;
 }
 
-.title{
+.title, .endtitle{
   height: 100%;
   text-align: center;
   font-size: 3rem;
@@ -263,4 +263,13 @@ body{
   max-height: 100%;
   font-size:1.9rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .beschrijving__text {
+    font-size: 3rem;
+  }
+  .endtitle {
+    font-size: 5rem;
+  }
 }

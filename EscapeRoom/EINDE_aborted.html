@@ -16,23 +16,23 @@
     <script src="js/audio-control.js" charset="utf-8" defer></script>
     
     <!-- Vervang deze, comment het uit als je geen script of css hebt -->
-    <title>Dialoog</title>
-    <link rel="stylesheet" href="css/dialoog.css">
-    <script src="js/dialogengine.js" charset="utf-8" defer></script>
+    <title>End</title>
+    <link rel="stylesheet" href="css/eindscherm_aborted.css">
+    <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script>
 
 </head>
 <body>
   <section class="mainbody">
 
-    <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
-    <!-- data-snelheid geeft aan hoe vaak er nieuwe tekst geplaatst moet worden per seconde (dus 1000/snelheid) -->
-    <!-- data-wait geeft aan hoeveel MILLISECONDEN er tussen dialogen moeten zitten -->
-    <ol class = "dialogs" id = "js__dialogs" data-bg="" data-chunk = 1 data-snelheid = 30 data-wait = 1000>
-        <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
-        <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
-        <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
-        <li data-naam = "Captain Sparrow" data-tekst = "Oh no, what have you done..."></li>
-    </ol>
+    <section>
+      <h1 class="title">THANK YOU FOR PLAYING!</h1>
+      <div class="beschrijving">
+        <article class="beschrijving__text">
+          You managed to abort the nuke and defeat R.U.T.E in <span id="js__minElapsed"></span> minutes and <span id="js__secElapsed"></span> seconds. You have saved the lives of thousands of innocent people. Captain Sparrow is proud of you!
+        </article>
+      </div>
+    </section>
+
     <section class="button__wrapper" onclick="switch__icons__sound()">
       <figure class="megaphone"></figure>
       <figure class="signal__icon" id="signal__icon__js"></figure>
@@ -42,10 +42,10 @@
   </section>
 
   <section class="footer">
-    <progress value="10" max="11"></progress>
+    <progress value="11" max="11"></progress>
     <div class="timer"><span id="time__js">--:--</span></div>
-    <section class="bordertitle"><h1 class="title">Dialogue part 4</h1></section>
-    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'EINDE_redirect.html'"> SKIP ⯈⯈</button>
+    <section class="bordertitle"><h1 class="title">End</h1></section>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'index.html'"> Back to menu </button>
   </section>
 
 </body>

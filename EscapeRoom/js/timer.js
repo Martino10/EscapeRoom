@@ -109,24 +109,21 @@ const getTimeRemaining = (minutes, seconds) => {
     timeRemaining.textContent = getTimeString(minutes, seconds);
 
 }
-    // was dit voor testen?
-    // if (window.location.href.includes('timerdemo2.html')) { //if it's on this page, stop the countdown
-    //     var minutes = parseInt(sessionStorage.getItem("minRemaining"));
-    //     var seconds = parseInt(sessionStorage.getItem("secRemaining"));
 
-    //     timerVars.minutes = minutes; //make variables global
-    //     timerVars.seconds = seconds;
-        
-    //     minutes = minutes < 10 ? "0" + minutes : minutes;
-    //     seconds = seconds < 10 ? "0" + seconds : seconds;
+const getTimeElapsed = (minutes, seconds) => {
+    let minRemaining = minutes;
+    let secRemaining = seconds;
 
-    //     display.textContent = minutes + ":" + seconds; //write down the time
-    //     clearInterval(window.myTimer); //stop the countdown
-    // }
+    let secElapsed = 60 - secRemaining;
+    let minElapsed = 9 - minRemaining;
 
+    let text_minElapsed = document.getElementById('js__minElapsed')
+    let text_secElapsed = document.getElementById('js__secElapsed')
+    text_minElapsed.textContent = minElapsed;
+    text_secElapsed.textContent = secElapsed;
+}
 
 window.addEventListener("load", () => {
-    var tenMinutes = 60 * 10;
     // console.log(minRemaining, secRemaining);
     
     if (sessionStorage.getItem("minRemaining") == null){ //if it's the first time counting down
@@ -151,6 +148,9 @@ window.addEventListener("load", () => {
     updateDisplay(minRemaining, secRemaining)
     if (window.location.href.includes('done')) {
         getTimeRemaining(minRemaining, secRemaining)
+    }
+    else if (window.location.href.includes('EINDE')) {
+        getTimeElapsed(minRemaining, secRemaining)
     }
     startTimer(minRemaining * 60 + secRemaining);
 

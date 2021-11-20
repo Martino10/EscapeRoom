@@ -150,6 +150,7 @@ body{
   text-align: center;
   font-size: 3rem;
   margin: auto auto;
+  margin-top: 1%;
 }
 
 .bordertitle{
@@ -245,4 +246,21 @@ body{
   font-family: inherit;
   font-size: inherit;
   border-radius:4px;
+}
+
+.beschrijving{
+  margin: auto;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.beschrijving__text{
+  overflow-y: auto;
+  max-height: 100%;
+  font-size:1.9rem;
+  text-align: center;
 }

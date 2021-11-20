@@ -1,11 +1,10 @@
-body {
+html, body {
     grid-template-rows: 100% !important;
-}
-
-.bronnenmain {
+    overflow: visible !important;
     background-image: url(../img/BulkWhale.webp);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .backbutton {

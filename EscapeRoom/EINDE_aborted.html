@@ -25,7 +25,7 @@
   <section class="mainbody">
 
     <section>
-      <h1 class="title">THANK YOU FOR PLAYING!</h1>
+      <h1 class="title" id="js__endTitle">THANK YOU FOR PLAYING, </h1>
       <div class="beschrijving">
         <article class="beschrijving__text">
           You managed to abort the nuke and defeat R.U.T.E in <span id="js__minElapsed"></span> minutes and <span id="js__secElapsed"></span> seconds. You have saved the lives of thousands of innocent people. Captain Sparrow is proud of you!
@@ -48,5 +48,8 @@
     <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'index.html'"> Back to menu </button>
   </section>
 
+  <script>
+    document.getElementById("js__endTitle").innerHTML += sessionStorage.getItem("playerName") + "!";
+  </script>
 </body>
 </html>

@@ -78,17 +78,20 @@ function backspace(){
     }
 }
 
-function showHint() {
-    location.href = 'puzzle1-hint.html'; //Verander naar je eigen hintpagina
+//Voor de hints
+const showHint = () => {
+    document.getElementById('hintbox__js').classList.remove('hidden');
+    document.getElementById('js__hint').classList.add('hidden');
 }
 
-function closeHint() {
-    window.history.back();
+const closeHint = () => {
+    document.getElementById('hintbox__js').classList.add('hidden');
+    document.getElementById('js__hint').classList.remove('hidden');
 }
 
-var check_time = window.setInterval(function(){
-    checkTime();
-  }, 1000);
+ var check_time = window.setInterval(function(){
+     checkTime();
+   }, 1000);
 
   
 function checkTime() {

@@ -46,7 +46,9 @@ body{
   cursor: pointer;
   top: 1rem;
   right: 1rem;
-  background:rgb(47, 132, 230);
+  background:rgb(143, 151, 187);
+  border-radius: 20%;
+  box-shadow: #555;
 }
 
 .megaphone{
@@ -60,7 +62,7 @@ body{
 
 .megaphone::after{
   content:"";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 1rem;
   width: 0;
   height: 0;

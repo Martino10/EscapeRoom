@@ -1,0 +1,26 @@
+.beschrijving{
+    margin: auto;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .beschrijving__text{
+    overflow-y: auto;
+    max-height: 100%;
+    font-size:1.9rem;
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .beschrijving__text {
+      font-size: 3rem;
+    }
+    .endtitle {
+      font-size: 5rem;
+    }
+  }

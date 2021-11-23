@@ -62,6 +62,10 @@ img {
     height: 75%;
 }
 
+.sideport > progress {
+    width: 100%;
+}
+
 #promptimg {
     background-color: blanchedalmond;
     margin: auto auto;

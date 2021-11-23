@@ -22,21 +22,31 @@ function getCookie(c_name)
       }
 }
 
+
 var song = document.getElementsByTagName('audio')[0];
 song.volume = 0.2;
 var played = false;
 var tillPlayed = getCookie('timePlayed');
+const tryplay = () => {
+    try{
+        song.play()
+        played = true
+    } catch {
+        played= false
+    }
+}
+
+
 function update()
 {
     if(!played){
         if(tillPlayed){
         song.currentTime = tillPlayed;
-        song.play();
-        played = true;
+
+        tryplay()
         }
         else {
-                song.play();
-                played = true;
+            tryplay()
         }
     }
 

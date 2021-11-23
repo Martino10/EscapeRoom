@@ -15,7 +15,8 @@ ul {
 }
 
 .buttons {
-    /* width: 40%; */
+    width: 75%;
+    margin-left: 25%;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);

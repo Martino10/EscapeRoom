@@ -25,7 +25,6 @@ const generate_html = (naam, tekst, add_naam=false) => {
 }
 const update_element = (obj, html) => {
     obj.innerHTML = html
-    obj.scrollIntoView()
 }
 
 const process_vars = (text, vars=textvars) => {
@@ -37,7 +36,6 @@ const process_vars = (text, vars=textvars) => {
 }
 
 const step = () => {
-    console.log('step');
     let msg = all_msg[msg_index]
     let tekst = process_vars(msg.dataset.tekst)
     let naam = process_vars(msg.dataset.naam)
@@ -50,6 +48,10 @@ const step = () => {
     }
 
     update_element(msg, generate_html(naam, tekst.slice(0, txt_index+chunk), add_naam))
+
+    if (txt_index == 0) {
+        msg.scrollIntoView({behavior: "smooth"})
+    }
     txt_index += chunk
     // console.log(txt_index)
     
@@ -68,13 +70,13 @@ const step = () => {
         }
     } else {
         let add = 0
-        if (tekst[txt_index-1] == '.' && tekst[txt_index] != '.'  ) {
+        if (tekst[txt_index-1] == '.' && tekst[txt_index] == ' ') {
             add = 750
         }
         else if (tekst[txt_index-1] == ',') {
             add = 250
         }
-        else if (tekst[txt_index-1] == '?' ||  tekst[txt_index-1] == '!') {
+        else if (tekst[txt_index] == ' ' && (tekst[txt_index-1] == '!' || tekst[txt_index-1] == '?')){
             add = 500
         }
         setTimeout(step, 1000/(speed*speed_modifier)+add)

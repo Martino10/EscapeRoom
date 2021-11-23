@@ -156,7 +156,8 @@ body{
 }
 
 .timer{
-  font-size: 3.5rem;
+  /* display: inline; */
+  font-size: 8vh;
   font-family: 'Qahiri', sans-serif;
   margin: auto;
 }
@@ -164,9 +165,10 @@ body{
 .title, .endtitle{
   height: 100%;
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: 6vh;
   margin: auto auto;
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 .bordertitle{

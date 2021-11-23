@@ -30,8 +30,8 @@ b {
 }
 
 .buttonguy {
-    /* position: relative;
-    top: 0; */
+    position: relative;
+    top: -10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     list-style: none;
@@ -44,9 +44,10 @@ b {
 }
 
 .buttonguy > li > button {
-    border-radius: 5px;
+    border-radius: 50%;
     color: white;
-    padding: 0px 15%;
+    width: 17rem;
+    height: 17rem;
     /* margin:auto auto; */
     font-size: 400%;
     background-color:red;
@@ -64,5 +65,41 @@ b {
     
     0% {
         opacity: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1100px) and (min-height: 400px) {
+    .buttonguy > li > button {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+  
+@media only screen and (min-width: 1100px) and (max-width: 1200px) and (min-height: 500px) {
+    .buttonguy > li > button {
+        width: 23rem;
+        height: 23rem;
+    }
+}
+  
+@media only screen and (min-width: 1200px) and (max-width: 1400px) and (min-height: 600px) {
+    .buttonguy > li > button {
+        width: 27rem;
+        height: 27rem;
+    }
+}
+  
+@media only screen and (min-width: 1400px) and (max-width: 1600px) and (min-height: 700px){
+    .buttonguy > li > button {
+        width: 32rem;
+        height: 32rem;
+    }
+}
+  
+@media only screen and (min-width: 1600px) and (min-height: 700px){
+    .buttonguy > li > button {
+        width: 38rem;
+        height: 38rem;
     }
 }

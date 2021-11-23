@@ -4,12 +4,12 @@ let x__mark__icon = document.getElementById('x__mark__js');
 let state__sound = 1;
 
 let song_obj = document.getElementsByTagName('audio')[0];
-if (song_obj == undefined) {
-  try {document.getElementById("button__wrapper").style.display = "none"}
-  catch {
+// if (song_obj == undefined) {
+//   try {document.getElementById("button__wrapper").style.display = "none"}
+//   catch {
     
-  }
-}
+//   }
+// }
 
 const save_state = () => {
   sessionStorage.setItem('Muted',state__sound)

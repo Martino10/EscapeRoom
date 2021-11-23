@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+    <!-- Defaults, niet aankomen -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/timer.js" charset="utf-8" defer></script>
+    <script src="js/audio-control.js" charset="utf-8" defer></script>
+    
+    <!-- Vervang deze, comment het uit als je geen script of css hebt -->
+    <title>End</title>
+    <link rel="stylesheet" href="css/eindscherm_aborted.css">
+    <script src="js/JOUW-SCRIPT-HIER.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+  <section class="mainbody">
+
+    <section>
+      <h1 class="endtitle" id="js__endTitle">THANK YOU FOR PLAYING, </h1>
+      <div class="beschrijving">
+        <article class="beschrijving__text">
+          You managed to abort the nuke and defeat R.U.T.E in <span id="js__minElapsed"></span> minutes and <span id="js__secElapsed"></span> seconds. You have saved the lives of thousands of innocent people.<br>Captain Sparrow is proud of you!
+        </article>
+      </div>
+    </section>
+
+    <section class="button__wrapper" onclick="switch__icons__sound()">
+      <figure class="megaphone"></figure>
+      <figure class="signal__icon" id="signal__icon__js"></figure>
+      <figure class="x__mark" id="x__mark__js"></figure>
+    </section>
+
+  </section>
+
+  <section class="footer">
+    <progress value="11" max="11"></progress>
+    <div class="timer"><span id="time__js">--:--</span></div>
+    <section class="bordertitle"><h1 class="title">End</h1></section>
+    <button class="skip__knop" id="skip__knop__js" onclick="window.location.href = 'index.html'"> Back to menu </button>
+  </section>
+
+  <script>
+    document.getElementById("js__endTitle").innerHTML += sessionStorage.getItem("playerName") + "!";
+  </script>
+</body>
+</html>

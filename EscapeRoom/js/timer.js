@@ -28,7 +28,7 @@ const next = () => { //next page
 const saveTime = () => {
     sessionStorage.setItem("minRemaining", timerVars.minutes);
     sessionStorage.setItem("secRemaining", timerVars.seconds);
-    console.log('Session stored!');
+    // console.log('Session stored!');
 }
 
 const isTimerPaused = () => {

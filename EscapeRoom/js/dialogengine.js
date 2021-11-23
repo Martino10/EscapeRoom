@@ -55,6 +55,7 @@ const step = () => {
     
     if (txt_index >= tekst.length) {
         txt_index = 0;
+
         msg_index++;
         if (msg_index < all_msg.length) {
             setTimeout(step, wait)
@@ -66,7 +67,17 @@ const step = () => {
             
         }
     } else {
-        setTimeout(step, 1000/(speed*speed_modifier))
+        let add = 0
+        if (tekst[txt_index-1] == '.' && tekst[txt_index] != '.'  ) {
+            add = 750
+        }
+        else if (tekst[txt_index-1] == ',') {
+            add = 250
+        }
+        else if (tekst[txt_index-1] == '?' ||  tekst[txt_index-1] == '!') {
+            add = 500
+        }
+        setTimeout(step, 1000/(speed*speed_modifier)+add)
     }
     
 }
@@ -102,6 +113,10 @@ const main = () => {
         case page.includes('dialoog_4_redirect'):
             document.body.style.backgroundImage = "url(img/dialoog_4_redirect.jpg)";
             break;
+        case page.includes('out_of_time'):
+            document.body.style.backgroundImage = "url(img/nuke.webp)";
+            break;
+
     }
 }
 

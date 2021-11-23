@@ -8,10 +8,16 @@ html, body {
   margin: 0; 
   height: 100%; 
   overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   }
 
 html{
   font-size: 62.5%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 progress {
@@ -187,7 +193,9 @@ body{
 }
 
 .naaminput {
-  width: 30%;
+  width: 70%;
+  padding: 2rem;
+  font-size: 2rem;
   border: 3px solid #555;
 }
 

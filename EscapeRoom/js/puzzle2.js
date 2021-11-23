@@ -54,16 +54,16 @@ const foundDoorhandle = () => {
 //Voor de hints
 const showHint = () => {
     document.getElementById('hintbox__js').classList.remove('hidden');
+    document.getElementById('js__hint').classList.add('hidden');
 }
 
 const closeHint = () => {
     document.getElementById('hintbox__js').classList.add('hidden');
+    document.getElementById('js__hint').classList.remove('hidden');
 }
 
 var check_time = window.setInterval(function(){
-    if (!window.location.href.includes('hint')) {
         checkTime();
-    }
   }, 1000);
 
 const checkTime = () => {

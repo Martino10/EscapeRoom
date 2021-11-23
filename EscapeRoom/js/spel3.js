@@ -236,13 +236,14 @@ const onload = () => {
 window.onload = onload
 
 //Voor de hints
-function showHint() {
-    document.getElementById('hintbox__js').classList.remove('hidden'); //Verander naar je eigen hintpagina
+const showHint = () => {
+    document.getElementById('hintbox__js').classList.remove('hidden');
+    document.getElementById('js__hint').classList.add('hidden');
 }
 
-function closeHint() {
-    document.getElementById('hintbox__js').classList.add('hidden'); //Verander naar je eigen hintpagina
-    // window.history.back();
+const closeHint = () => {
+    document.getElementById('hintbox__js').classList.add('hidden');
+    document.getElementById('js__hint').classList.remove('hidden');
 }
 
 var check_time = window.setInterval(() => {

@@ -1,10 +1,16 @@
 function registerName() {
-    var input = document.getElementById("userInput").value;
+    let input = document.getElementById("userInput").value;
     
     //set name
     if (input != "") {
-        sessionStorage.setItem("playerName", input);
-        location.href = 'dialoog_1.html';
+        if (input.length > 15) {
+            alert("Error: Your name should be 15 characters or less.");
+            input = "";
+        }
+        else {
+            sessionStorage.setItem("playerName", input);
+            location.href = 'dialoog_1.html';
+        }
     }
     else {
         alert("Error: Please register your name.");

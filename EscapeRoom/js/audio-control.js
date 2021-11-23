@@ -3,7 +3,7 @@ var x__mark__icon = document.getElementById('x__mark__js');
 
 var state__sound = 1;
 
-var song = document.getElementsByTagName('audio')[0];
+var song = document.getElementsByTagName('audio');
 
 function switch__icons__sound(){
   if (state__sound == 1){

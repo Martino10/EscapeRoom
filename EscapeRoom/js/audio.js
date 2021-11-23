@@ -22,7 +22,7 @@ function getCookie(c_name)
       }
 }
 
-var song = document.getElementsByTagName('audio')[0];
+var song = document.getElementsByTagName('audio');
 song.volume = 0.2;
 var played = false;
 var tillPlayed = getCookie('timePlayed');

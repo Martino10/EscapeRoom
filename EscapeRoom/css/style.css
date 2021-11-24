@@ -244,6 +244,16 @@ body{
   transform: translateX(-50%) translateY(-50%);
 }
 
+.continue_button {
+  margin-top: 20px;
+  padding:10px;
+  border: 2px solid gray;
+  background-color:#ded0e1;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius:4px;
+}
+
 .hintbox {
   position: absolute;
   text-align: center;

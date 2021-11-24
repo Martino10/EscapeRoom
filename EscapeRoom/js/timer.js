@@ -7,23 +7,8 @@ let run_on_pages = [
     'puzzle3.html',
     'puzzle1.html',
     'puzzle2-window.html',
-    'puzzle2-2.html',
-    'puzzle2-hint.html'
+    'puzzle2-2.html'
 ]
-
-const next = () => { //next page
-    // test functie?
-    saveTime()
-    if (window.location.href.includes('timerdemo.html')) { 
-        window.location.href = 'timerdemo2.html';
-    }
-    else if (window.location.href.includes('timerdemo2.html')) {
-        window.location.href = 'timerdemo3.html';
-    }
-    else {
-        window.location.href = 'timerdemo.html';
-    }
-}
 
 const saveTime = () => {
     sessionStorage.setItem("minRemaining", timerVars.minutes);

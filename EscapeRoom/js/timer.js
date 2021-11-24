@@ -133,6 +133,7 @@ window.addEventListener("load", () => {
     updateDisplay(minRemaining, secRemaining)
     if (window.location.href.includes('done')) {
         getTimeRemaining(minRemaining, secRemaining)
+        document.getElementById('skip__knop__js').disabled = true;
     }
     else if (window.location.href.includes('EINDE')) {
         getTimeElapsed(minRemaining, secRemaining)

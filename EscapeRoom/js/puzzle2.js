@@ -69,6 +69,8 @@ var check_time = window.setInterval(function(){
 const checkTime = () => {
     let minRemaining = parseInt(sessionStorage.getItem("minRemaining"));
     if (minRemaining < 5) {
-        document.getElementById("js__hint").style.visibility = "visible";
+        if (window.location.href.includes('puzzle2.html')) {
+            document.getElementById("js__hint").style.visibility = "visible";
+        }
     }
 }

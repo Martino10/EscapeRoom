@@ -1,0 +1,33 @@
+body{
+    background: url("../img/background__first-shot.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.nameform {
+    text-align: center;
+    margin-top: 10vh;
+    margin-left: 25%;
+    box-sizing: border-box;
+    display: block;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    font-size: 16px;
+    backdrop-filter: blur(6px);
+  }
+  
+  .naaminput {
+    width: 70%;
+    padding: 2rem;
+    font-size: 2rem;
+    border: 3px solid #555;
+  }
+  
+  .submitName {
+    margin-top: 20px;
+    padding:10px;
+    font-family: inherit;
+    font-size: inherit;
+  }

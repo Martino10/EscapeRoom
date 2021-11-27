@@ -41,7 +41,7 @@ body{
 
 .middle__screen{
   display:grid;
-  grid-template-rows: 60% 20% 20%;
+  grid-template-rows: 70% 15% 15%;
 }
 
 .beschrijving{
@@ -65,20 +65,14 @@ body{
   justify-content: center;
 }
 
-.start__spel{
-  font-size: 2.7rem;
-  height:50%;
-  width:25%;
-}
-
 .bronnen__wrapper{
   display:flex;
   align-items: center;
   justify-content: center;
 }
 
-.bronnen{
-  font-size: 2.7rem;
+.start__spel, .bronnen{
+  font-size: 2.5rem;
   height:50%;
   width:25%;
 }

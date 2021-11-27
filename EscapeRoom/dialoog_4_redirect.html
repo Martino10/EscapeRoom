@@ -22,6 +22,11 @@
 
 </head>
 <body>
+  <!-- music -->
+  <audio loop id="audioplayer" autoplay="true" preload="auto" src="music/regret.mp3">
+  </audio>
+  <script src="js/audio.js"></script>
+
   <section class="mainbody">
 
     <!-- data-chunk geeft aan hoeveel letters er tegelijkertijd geplaatst moeten worden -->
@@ -31,6 +36,7 @@
         <!-- <li data-naam="persoon 1" data-tekst="Dit is tekst"></li> -->
         <!-- dit is een voorbeeld entry. De naam komt bij de tekst te staan.  -->
         <!-- let op dat je niet zelf elementen in de LI's moet zetten, het javascript bestand regelt dit allemaal  -->
+        <li data-naam = "Brutus" data-tekst = "Well done soldier! Those bastards got what they deserve."></li>
         <li data-naam = "Captain Sparrow" data-tekst = "Oh no, what have you done..."></li>
     </ol>
     <section class="button__wrapper" onclick="switch__icons__sound()">

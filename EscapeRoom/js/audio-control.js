@@ -46,15 +46,23 @@ function switch__icons__sound(){
   // console.log(x__mark__icon)
 }
 
-// window.addEventListener("load", () => {
-window.onload = () => {
+window.addEventListener("load", () => {
+// window.onload => {
   let sesh = sessionStorage.getItem("Muted")
   if (sesh == null) {
     state__sound = 1;
+    save_state()
   } else {
-    if (sesh != state__sound) {
+    let intsesh = parseInt(sesh)
+    console.log(typeof intsesh)
+    console.log(intsesh)
+    console.log(typeof state__sound)
+    console.log(state__sound)
+    console.log(intsesh != state__sound)
+
+    if (intsesh != state__sound) {
       switch__icons__sound()
     }
   }
 }
-// })
+)

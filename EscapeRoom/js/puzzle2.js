@@ -10,6 +10,7 @@ buttonClicked = {
 clickOrder = [];
 
 const checkAll = () => {
+    // Check if buttons were pushed in the right order once all buttons are clicked
     if (buttonClicked[1] && buttonClicked[2] && buttonClicked[3] && buttonClicked[4] && buttonClicked[5] && buttonClicked[6]) {
         if (clickOrder[0] == 1 && clickOrder[1] == 2 && clickOrder[2] == 3 && clickOrder[3] == 4 && clickOrder[4] == 5 && clickOrder[5] == 6) {
             location.href = 'puzzle2-dialoog2.html';

@@ -5,9 +5,11 @@ body{
 }
 
 .nameform {
+    position: absolute;
     text-align: center;
-    margin-top: 10vh;
-    margin-left: 25%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
     display: block;
     border: 2px solid black;
@@ -16,17 +18,26 @@ body{
     width: 50%;
     font-size: 16px;
     backdrop-filter: blur(6px);
+    height: 50%;
+    font-size: 2vw;
+  }
+
+  .form_content_wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .naaminput {
-    width: 70%;
+    width: 100%;
     padding: 2rem;
     font-size: 2rem;
     border: 3px solid #555;
   }
   
   .submitName {
-    margin-top: 20px;
+    margin-top: 5%;
     padding:10px;
     font-family: inherit;
     font-size: inherit;

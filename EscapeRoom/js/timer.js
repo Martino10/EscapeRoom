@@ -66,7 +66,7 @@ const startTimer = (duration) => { //start the countdown
         timerVars.minutes = minutes;
         timerVars.seconds = seconds;
         
-        // save the time every 1 second
+        // save the time every second
         if (seconds % 1 == 0){
             saveTime()
         }
@@ -75,7 +75,7 @@ const startTimer = (duration) => { //start the countdown
 
         if (--timer < 0) {  
             console.log('TIMER RAN OUT!');
-            window.location.href = 'out_of_time.html'
+            window.location.href = 'out_of_time.html';
             timer = duration;
         }
     }, 1000);
@@ -83,14 +83,14 @@ const startTimer = (duration) => { //start the countdown
 
 const updateDisplay = (minutes, seconds) => {
 
-    let display = document.getElementById('time__js')
+    let display = document.getElementById('time__js');
     display.textContent = getTimeString(minutes, seconds);
 
 }
 
 const getTimeRemaining = (minutes, seconds) => {
 
-    let timeRemaining = document.getElementById('js__timeleft')
+    let timeRemaining = document.getElementById('js__timeleft');
     timeRemaining.textContent = getTimeString(minutes, seconds);
 
 }
@@ -102,18 +102,30 @@ const getTimeElapsed = (minutes, seconds) => {
     let secElapsed = 60 - secRemaining;
     let minElapsed = 9 - minRemaining;
 
-    let text_minElapsed = document.getElementById('js__minElapsed')
-    let text_secElapsed = document.getElementById('js__secElapsed')
-    text_minElapsed.textContent = minElapsed;
-    text_secElapsed.textContent = secElapsed;
+    // insert elapsed time into ending text, change grammar when minElapsed and/or secElapsed is 1
+    if (minElapsed == 1) {
+        let text_minElapsed = document.getElementById('js__minElapsed');
+        text_minElapsed.textContent = minElapsed + " minute";
+    }
+    else {
+        let text_minElapsed = document.getElementById('js__minElapsed');
+        text_minElapsed.textContent = minElapsed + " minutes";
+    }
+
+    if (secElapsed == 1) {
+        let text_secElapsed = document.getElementById('js__secElapsed');
+        text_secElapsed.textContent = secElapsed + " second";
+    }
+    else {
+        let text_secElapsed = document.getElementById('js__secElapsed');
+        text_secElapsed.textContent = secElapsed + " seconds";
+    }
 }
 
 window.addEventListener("load", () => {
-    // console.log(minRemaining, secRemaining);
     
     if (sessionStorage.getItem("minRemaining") == null){ //if it's the first time counting down
-        // startTimer(tenMinutes);
-        console.log('New session created')
+        console.log('New session created');
         timerVars.minutes = 10
         timerVars.seconds = 0
         saveTime()

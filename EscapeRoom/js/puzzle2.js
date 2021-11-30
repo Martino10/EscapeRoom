@@ -49,6 +49,7 @@ const check_allClicked = () => {
             return;
         }
     }
+    //if all buttons are clicked, check if the order is correct
     checkAll();
 }
 

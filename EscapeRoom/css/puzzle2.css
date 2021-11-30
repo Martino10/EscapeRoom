@@ -20,6 +20,7 @@ body {
     margin-bottom: 10%;
     cursor: pointer;
     height: 60%;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .puzzlebutton__wrapper {

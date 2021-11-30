@@ -35,9 +35,6 @@ body{
   grid-template-rows: 90% 10%;
   font-family: 'Roboto', sans-serif;
 }
-/* 
-.mainbody{
-} */
 
 .ui_button {
   border-radius: 15px;
@@ -167,7 +164,6 @@ body{
 }
 
 .timer{
-  /* display: inline; */
   font-size: 8vh;
   font-family: 'Qahiri', sans-serif;
   margin: auto;
@@ -176,10 +172,8 @@ body{
 .title, .endtitle{
   height: 100%;
   text-align: center;
-  /* font-size: 2rem; */
   font-size: 6vh;
   margin: auto auto;
-  /* margin-top: 1%; */
 }
 
 .bordertitle{

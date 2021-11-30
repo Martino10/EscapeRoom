@@ -17,39 +17,6 @@ body {
 
 }
 
-.puzzle2_button_img {
-    height: auto;
-    width: 100%;
-}
-
-.puzzle2_button {
-    position: relative;
-    top: 13%;
-    margin: auto;
-    width: 60%;
-    padding-bottom: 100%;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.puzzlebutton__wrapper {
-    display: grid;
-    grid-template: "bin-text bin-text bin-text bin-text bin-text bin-text"
-                    "puzzle2_button puzzle2_button puzzle2_button puzzle2_button puzzle2_button puzzle2_button";
-    top: 17%;
-    position: absolute;
-    left: 54%;
-    z-index: 0;
-    background-color: gray;
-    height: 20%;
-}
-
-.bin-text {
-    font-size: 150%;
-    text-align: center;
-    margin-top: 10%;
-}
-
 @media only screen and (min-width: 1200px) {
     .windowbutton {
         left: 39%;

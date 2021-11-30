@@ -15,26 +15,27 @@ body {
 .puzzle2_button {
     position: relative;
     top: 13%;
-    margin: auto;
+    margin: 0 auto;
     width: 60%;
-    padding-bottom: 100%;
+    margin-bottom: 10%;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    height: 60%;
 }
 
 .puzzlebutton__wrapper {
     display: grid;
-    grid-template: "bin-text bin-text bin-text bin-text bin-text bin-text"
-                    "puzzle2_button puzzle2_button puzzle2_button puzzle2_button puzzle2_button puzzle2_button";
+    grid-template: "num num num num num num";
     top: 17%;
     position: absolute;
     left: 54%;
     z-index: 0;
     background-color: gray;
     height: 20%;
+    overflow: none;
 }
 
 .bin-text {
+    grid-area: "num";
     font-size: 150%;
     text-align: center;
     margin-top: 10%;
